@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitForecast</title>
 
-    <title>Document</title>
-
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <script src="js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-    
+  <body>
+    <nav></nav>
+    <section class="hero-banner"></section>
+    <main>
+      <aside class="card col-4 weather-widget">
+        <h2>The Weather Today</h2>
+        <!-- City name and today's date to be replaced dynamically in JS -->
+        <p>
+          <span class="city-name">London</span>,
+          <span class="today-date">dd/mm/yyyy</span>
+        </p>
+        <div class="weather-data">
+          <!-- create weather icon dynamically in JS -->
+          <!-- create list items to display temperature and precipitation % dynamically in JS -->
+        </div>
+        <!-- TODO Add Boostrap form with one input field and submit/search button for custom location input -->
+      </aside>
+      <div class="card col-8 modal-button-section">
+        <h2>Generate your own workout based on the weather forecast...</h2>
+        <p>
+          Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
+          legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos
+          cu eum Lorem ipsum dolor sit amet et delectus accommodare his consul
+          copiosae legendos at vix ad putent delectus delicata usu. Vidit
+          dissentiet eos cu eum
+        </p>
+        <button class="btn btn-primary">Generate Workout</button>
+      </div>
+    </main>
+    <section class="custom-workout-section">
+      <h2>Your Custom Workout</h2>
+      <!-- TODO add boostrap slider to display exercises here ; title of exercise is <h3>-->
+    </section>
+    <section class="past-workout-section">
+      <h2>Past Workout</h2>
+      <div class="card col-4 exercise-card"></div>
+      <div class="card col-4 exercise-card"></div>
+      <div class="card col-4 exercise-card"></div>
+      <!-- TODO add section similar to exercise slider to display exercise when past exercise div is clicked; exercise titles are <h3>-->
+    </section>
+    <footer class="footer">
+      <p>
+        Project created by Alex, Alina, Lotanna and Dean.
+        <a href="#">Check out our Github Repository</a>
+      </p>
+      <p>copyright statement</p>
+    </footer>
+
+    <!-- TODO Add modal skeleton and modify their input data based on weather in JS -->
+
     <script src="js/weather.js"></script>
     <script src="js/exercises.js"></script>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
