@@ -144,7 +144,7 @@
           type="button"
           class="btn btn-primary modal-trigger-btn"
           data-toggle="modal"
-          data-target="#modalWet"
+          data-target="#modalDry"
         >
           Generate Workout
         </button>
@@ -254,7 +254,9 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalDryTitle">Modal title</h5>
+                <h5 class="modal-title" id="modalDryTitle">
+                  Generate An Outdoor Workout
+                </h5>
                 <button
                   type="button"
                   class="close"
@@ -264,7 +266,45 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">...</div>
+              <div class="modal-body">
+                <p>
+                  The weather seems dry enough to workout outdoors! Pick from
+                  the options below to generate your outdoor workout.
+                </p>
+                <!-- Form with options for user parameters -->
+                <!-- options for body part (muscle group) -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Type of Exercise</label
+                    >
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Select one from below</option>
+                    <option value="1">running</option>
+                    <option value="2">walking</option>
+                    <option value="3">cycling</option>
+                  </select>
+                </div>
+
+                <!-- options for equipment -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Duration</label
+                    >
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Select from below</option>
+                    <option value="1">15 min</option>
+                    <option value="2">30 min</option>
+                    <option value="3">45 min</option>
+                    <option value="4">60 min</option>
+                    <option value="5">75 min</option>
+                    <option value="6">90 min</option>
+                  </select>
+                </div>
+              </div>
               <div class="modal-footer">
                 <button
                   type="button"
