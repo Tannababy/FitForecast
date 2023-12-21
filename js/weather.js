@@ -12,6 +12,7 @@ const weatherHumidity = $('#humidity');
 const weatherWind = $('#wind');
 const weatherForm = $('#search-form');
 const weatherFormInput = $('#search-input');
+var localStoragePrecipKey="precipitation";
 
 //Set methods 
 function setCity(element, text) {
@@ -51,7 +52,6 @@ function setWeatherCard(city, weather) {
 }
 
 //
-
 function search(cityInput) {
     var geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=1&appid=' + apiKey
     fetch(geoUrl)
@@ -63,6 +63,8 @@ function search(cityInput) {
             var lat = data[0].lat
             var lon = data[0].lon
             var cityName = data[0].name
+
+            fetchPrecipitation(lat, lon)
 
             var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
             fetch(weatherUrl)
@@ -82,6 +84,7 @@ function search(cityInput) {
 function successLocation(locationCoords) {
     const lat = locationCoords.coords.latitude;
     const lon = locationCoords.coords.longitude;
+    fetchPrecipitation(lat, lon)
 
     var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
     fetch(weatherUrl)
@@ -124,9 +127,27 @@ weatherForm.on('submit', function (event) {
     search(weatherInput);
 })
 
-//to do:
+//
 //-function to determinate what kind of weather it is now(like rain, sun,wind...)
+function fetchPrecipitation(lat, lon){
+    //https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+    var weatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&cnt=1&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
+    fetch(weatherUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            // list.pop Probability of precipitation.
+            // The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100%
+            console.log(data.list[0].pop)
+          var precipitationRezult=data.list[0].pop;
+          localStorage.setItem(localStoragePrecipKey,precipitationRezult);
+        })
+}
 
+function isIndoorWorkout(){
+
+}
 
 //TODO delete or change?
 getLocation()

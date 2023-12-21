@@ -29,6 +29,10 @@ h6 {
   width: 200px;
 }
 
+.navbar-toggler {
+  border-color: var(--text-color);
+}
+
 /* Jumbotron styles*/
 .jumbotron {
   background-image: url("../images/header-image.jpg");
