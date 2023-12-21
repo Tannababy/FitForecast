@@ -73,8 +73,8 @@
         </div>
       </div>
     </section>
-    <main>
-      <aside class="card col-4 weather-widget">
+    <main class="row">
+      <aside class="card col-md-4 col-sm-12 weather-widget">
         <h2>The Weather Today</h2>
         <!-- City name and today's date to be replaced dynamically in JS -->
         <p>
@@ -91,14 +91,28 @@
           <p id="temperature"></p>
           <p id="humidity"></p>
           <p id="wind"></p>
+
+          <!-- Boostrap form with one input field and submit/search button for custom location input -->
           <form id="search-form" class="form">
             <div class="form-inline form-group">
-              <div class="input-group d-flex flex-column justify-content-sm-around">
-                <input class="form-input weather-search rounded-2" type="text" id="search-input" placeholder="London"
-                  aria-labelledby="form-heading" aria-controls="today forecast" />
+              <div
+                class="input-group d-flex flex-column justify-content-sm-around"
+              >
+                <input
+                  class="form-input weather-search rounded-2"
+                  type="text"
+                  id="search-input"
+                  placeholder="London"
+                  aria-labelledby="form-heading"
+                  aria-controls="today forecast"
+                />
                 <div class="input-group-append mt-3">
-                  <button type="submit" class="btn search-button btn-primary w-100" id="search-button"
-                    aria-label="submit search">
+                  <button
+                    type="submit"
+                    class="btn search-button btn-primary w-100"
+                    id="search-button"
+                    aria-label="submit search"
+                  >
                     Search
                   </button>
                 </div>
@@ -108,9 +122,8 @@
           <!-- create weather icon dynamically in JS -->
           <!-- create list items to display temperature and precipitation % dynamically in JS -->
         </div>
-        <!-- TODO Add Boostrap form with one input field and submit/search button for custom location input -->
       </aside>
-      <div class="card col-8 modal-button-section">
+      <div class="card col-md-8 col-sm-12 modal-button-section">
         <h2>Generate your own workout based on the weather forecast...</h2>
         <p>
           Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
@@ -119,9 +132,11 @@
           copiosae legendos at vix ad putent delectus delicata usu. Vidit
           dissentiet eos cu eum
         </p>
+
+        <!-- MODAL TRIGGER BUTTON -->
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-primary modal-trigger-btn"
           data-toggle="modal"
           data-target="#modalWet"
         >
