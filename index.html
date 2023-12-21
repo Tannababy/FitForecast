@@ -91,6 +91,20 @@
           <p id="temperature"></p>
           <p id="humidity"></p>
           <p id="wind"></p>
+          <form id="search-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group d-flex flex-column justify-content-sm-around">
+                <input class="form-input weather-search rounded-2" type="text" id="search-input" placeholder="London"
+                  aria-labelledby="form-heading" aria-controls="today forecast" />
+                <div class="input-group-append mt-3">
+                  <button type="submit" class="btn search-button btn-primary w-100" id="search-button"
+                    aria-label="submit search">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
           <!-- create weather icon dynamically in JS -->
           <!-- create list items to display temperature and precipitation % dynamically in JS -->
         </div>
