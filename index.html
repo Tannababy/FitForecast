@@ -105,8 +105,95 @@
           copiosae legendos at vix ad putent delectus delicata usu. Vidit
           dissentiet eos cu eum
         </p>
-        <button class="btn btn-primary">Generate Workout</button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#modalWet"
+        >
+          Generate Workout
+        </button>
+        <!-- TODO Add modal skeleton and modify their input data based on weather in JS -->
+        <!-- Modal for precipitation over 20% (For indoor workout)-->
+        <div
+          class="modal fade"
+          id="modalWet"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalWetTitle">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Generate Workout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for precipitation under 20% (For outdoor workouts)-->
+        <div
+          class="modal fade"
+          id="modalDry"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalDryTitle">Modal title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Generate Workout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Main section -->
     </main>
     <section class="custom-workout-section">
       <h2>Your Custom Workout</h2>
@@ -143,8 +230,6 @@
         </p>
       </footer>
     </div>
-
-    <!-- TODO Add modal skeleton and modify their input data based on weather in JS -->
 
     <!-- Day.js -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
