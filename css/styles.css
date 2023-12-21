@@ -1,7 +1,34 @@
+/* Universal styles */
+:root {
+  --text-color: #181f3a;
+  --accent-color-blue: #8acdea;
+  --accent-color-vanilla: #f0e2a3;
+  --bg-light: #fafeff;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  background: var(--bg-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Navbar styles */
+.navbar {
+  background: var(--bg-light);
+}
+
 .navbar-brand {
   width: 200px;
 }
+
 /* Jumbotron styles*/
 .jumbotron {
   background-image: url("../images/header-image.jpg");
