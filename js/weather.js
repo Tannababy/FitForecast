@@ -2,9 +2,6 @@
 
 const apiKey = "4691032df8d1c150d279bf0141595f60";
 const defaultCity = 'London'
-const latLondon = 51.5073219;
-const lonLondon = -0.1276474;
-var cityName = '';
 const date = dayjs().format('DD/MM/YYYY');
 const weatherCityName = $('#city-name');
 const weatherDateToday = $('#today-date');
@@ -12,6 +9,8 @@ const weatherIcon = $('#weather-icon');
 const weatherTemp = $('#temperature');
 const weatherHumidity = $('#humidity');
 const weatherWind = $('#wind');
+const weatherForm = $('#search-form');
+const weatherFormInput = $('#search-input');
 
 //Set methods 
 function setCity(element, text) {
@@ -49,6 +48,33 @@ function setWeatherCard(city, weather) {
     setWind(weatherWind, weather.wind.speed);
 }
 
+//
+
+function search(cityInput) {
+    var geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=1&appid=' + apiKey
+    fetch(geoUrl)
+        .then(function (data) {
+            return data.json()
+        })
+        .then(function (data) {
+            // console.log(data)
+            var lat = data[0].lat
+            var lon = data[0].lon
+            var cityName = data[0].name
+
+            var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
+            fetch(weatherUrl)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    // console.log(data)
+
+                    setWeatherCard(cityName, data);
+                })
+        })
+}
+
 // 2. Get geolocation
 //Method to handle success callback when we get location from browser
 function successLocation(locationCoords) {
@@ -61,9 +87,9 @@ function successLocation(locationCoords) {
             return data.json();
         })
         .then(function (data) {
-            console.log(data);
-            cityName = data.name;
-            setWeatherCard(cityName, data);
+            // console.log(data);
+
+            setWeatherCard(data.name, data);
         })
 }
 
@@ -72,21 +98,9 @@ function successLocation(locationCoords) {
 function errorLocation(error) {
     console.log('unable to retrieve location,got error code ' + error.code);
     console.log('defaulting to ' + defaultCity);
-    cityName = defaultCity;
-    const lat = latLondon;
-    const lon = lonLondon;
 
-    var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
-    fetch(weatherUrl)
-        .then(function (data) {
-            return data.json();
-        })
-        .then(function (data) {
-            console.log(data);
-            setWeatherCard(cityName, data);
-        })
+    search(defaultCity)
 }
-
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -94,8 +108,19 @@ function getLocation() {
     }
 }
 
-getLocation()
+//create form submit event to update the city 
+weatherForm.on('submit', function (event) {
+    event.preventDefault();
+    var weatherInput = weatherFormInput.val().trim();
+    if (weatherInput == "") {
+        return;
+    }
+    search(weatherInput);
+})
 
 //to do:
-  //-function to determinate what kind of weather it is now(like rain, sun,wind...)
-  
+//-function to determinate what kind of weather it is now(like rain, sun,wind...)
+
+
+//TODO delete or change?
+getLocation()
