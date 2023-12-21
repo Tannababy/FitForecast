@@ -9,7 +9,7 @@ let exerciseInstructions = [];
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'd592bd071bmsh0f69b85e08df678p1ff500jsn2bf527f623c7',
+		'X-RapidAPI-Key': 'd592bd071bmsh0f69b85e08df678p1ff500jsn2bf527f623c7error',
 		'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
 	}
 };
@@ -17,17 +17,12 @@ const options = {
 async function getExercises(bodyPart, equipment) {
   let queryURL = url + bodyPart + limit;
 
-  // // Empty the array each call to prevent more than three accumulating
-  // exerciseName = [];
-  // exerciseGif = [];
-  // exerciseInstructions = [];
-
    try {
     const response = await fetch(queryURL, options);
     const data = await response.json();
     filteredDataResponse(data, equipment)
   } catch (error) {
-    console.error(error);
+    assignDefaults();
   }
 }
 
@@ -49,6 +44,7 @@ function filteredDataResponse(data, equipment) {
       // Remove the map values return just the array of objects
       .map(({ value }) => value)
   
+  console.log(returnedExercises)
   // Repeatedly pop off the last array item until only three are left
   while (returnedExercises.length > 3) {
     returnedExercises.pop();
@@ -61,6 +57,40 @@ function filteredDataResponse(data, equipment) {
   }
 }
 
+function assignDefaults() {
+  exerciseName.push("walking high knees lunge", "push to run", "mountain climber");
+  exerciseGif = [
+    "https://v2.exercisedb.io/image/m19DdrtrEvoCHI",
+    "https://v2.exercisedb.io/image/WH4EJhC5bvgoZi",
+    "https://v2.exercisedb.io/image/qrNdRDTQL2hIR0"
+  ];
+  exerciseInstructions = [
+    {
+      0: "Stand with your feet hip-width apart.",
+      1: "Lift your right knee up towards your chest as high as you can while balancing on your left leg.",
+      2: "Step forward with your right foot and lower your body into a lunge position, bending both knees to a 90-degree angle.",
+      3: "Push off with your right foot and bring your left knee up towards your chest.",
+      4: "Step forward with your left foot and lower your body into a lunge position.",
+      5: "Continue alternating legs and lunging forward, keeping your core engaged and maintaining a steady pace.",
+      6: "Repeat for the desired number of repetitions."
+    },
+    {
+      0: "Start in a push-up position with your hands shoulder-width apart and your body in a straight line.",
+      1: "Lower your chest towards the ground by bending your elbows, keeping your body straight.",
+      2: "Push through your hands to extend your arms and return to the starting position.",
+      3: "Quickly bring one knee towards your chest, then quickly switch and bring the other knee towards your chest.",
+      4: "Continue alternating knees as fast as you can while maintaining good form.",
+      5: "Continue for the desired duration or number of repetitions."
+    },
+    {
+      0: "Start in a high plank position with your hands directly under your shoulders and your body in a straight line.",
+      1: "Engage your core and bring your right knee towards your chest, then quickly switch and bring your left knee towards your chest.",
+      2: "Continue alternating legs in a running motion, keeping your hips low and your core engaged.",
+      3: "Maintain a steady pace and breathe evenly throughout the exercise.",
+      4: "Repeat for the desired number of repetitions."
+    }
+  ];
+}
   // Call the getExercise function passing in two variables.
     // The first variable should contain a string matching one of the bodyPart options
     // The second variable should contain a string matching one of the equipment options
