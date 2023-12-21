@@ -1,7 +1,8 @@
 // Variables
 
 const apiKey = "4691032df8d1c150d279bf0141595f60";
-const defaultCity = 'London'
+const defaultCity = 'London';
+var currentCity = '';
 const date = dayjs().format('DD/MM/YYYY');
 const weatherCityName = $('#city-name');
 const weatherDateToday = $('#today-date');
@@ -14,6 +15,7 @@ const weatherFormInput = $('#search-input');
 
 //Set methods 
 function setCity(element, text) {
+    currentCity = text;
     element.text(text);
 }
 
@@ -32,11 +34,11 @@ function setTemp(element, text) {
 }
 
 function setHum(element, text) {
-    element.text("Humidity: " + text + '%');
+    element.text("Humidity: " + text + ' %');
 }
 
 function setWind(element, text) {
-    element.text("Wind: " + text + 'KPH');
+    element.text("Wind: " + text + ' meter/sec');
 }
 
 function setWeatherCard(city, weather) {
@@ -112,7 +114,11 @@ function getLocation() {
 weatherForm.on('submit', function (event) {
     event.preventDefault();
     var weatherInput = weatherFormInput.val().trim();
+    weatherFormInput.val('');
     if (weatherInput == "") {
+        return;
+    } else if (currentCity.toLowerCase() == weatherInput.toLowerCase()) {
+        //dont call API when the same city
         return;
     }
     search(weatherInput);
