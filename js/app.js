@@ -24,3 +24,4 @@ console.log(exerciseInstructions);
 
 //8. Once exercise is displayed (getExercise), store data to array of objects in local storage
 var nothing = [];
+var something = [];
