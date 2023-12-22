@@ -12,7 +12,7 @@ const weatherHumidity = $('#humidity');
 const weatherWind = $('#wind');
 const weatherForm = $('#search-form');
 const weatherFormInput = $('#search-input');
-var localStoragePrecipKey="precipitation";
+var localStoragePrecipKey = "precipitation";
 
 //Set methods 
 function setCity(element, text) {
@@ -127,9 +127,13 @@ weatherForm.on('submit', function (event) {
     search(weatherInput);
 })
 
-//
-//-function to determinate what kind of weather it is now(like rain, sun,wind...)
-function fetchPrecipitation(lat, lon){
+// function to cleanup 
+function cleanupLocalStorage() {
+    localStorage.removeItem(localStoragePrecipKey);
+}
+
+// function to retrieve and store in local storage precipitation percentage.
+function fetchPrecipitation(lat, lon) {
     //https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
     var weatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&cnt=1&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
     fetch(weatherUrl)
@@ -139,15 +143,24 @@ function fetchPrecipitation(lat, lon){
         .then(function (data) {
             // list.pop Probability of precipitation.
             // The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100%
-            console.log(data.list[0].pop)
-          var precipitationRezult=data.list[0].pop;
-          localStorage.setItem(localStoragePrecipKey,precipitationRezult);
+            // console.log(data.list[0].pop)
+
+            var precipitationRezult = data.list[0].pop * 100;
+            localStorage.setItem(localStoragePrecipKey, precipitationRezult);
         })
 }
 
-function isIndoorWorkout(){
+function isIndoorWorkout() {
+    const precipitationPercentage = localStorage.getItem(localStoragePrecipKey).parseInt();
 
+    //chance of precip - if more than 20% get indoor workout , if less than 20% show outdoor workout
+    if (precipitationPercentage  > 20) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 //TODO delete or change?
+cleanupLocalStorage()
 getLocation()
