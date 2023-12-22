@@ -80,8 +80,8 @@
       </div>
     </section>
     <main class="container-fluid">
-      <div class="row">
-        <aside class="card col-md-4 col-sm-12 weather-widget">
+      <div class="row justify-content-center">
+        <aside class="card col-md-3 col-sm-12 weather-widget m-1">
           <h2>The Weather Today</h2>
           <!-- City name and today's date to be replaced dynamically in JS -->
           <p>
@@ -106,17 +106,17 @@
                   class="input-group d-flex flex-column justify-content-sm-around col-sm-12"
                 >
                   <input
-                    class="form-input weather-search rounded-2"
+                    class="form-input weather-search"
                     type="text"
                     id="search-input"
-                    placeholder="London"
+                    placeholder="Add your city manually"
                     aria-labelledby="form-heading"
                     aria-controls="today forecast"
                   />
                   <div class="input-group-append mt-3">
                     <button
                       type="submit"
-                      class="btn search-button btn-primary w-100"
+                      class="btn search-button w-100"
                       id="search-button"
                       aria-label="submit search"
                     >
@@ -131,7 +131,7 @@
           </div>
         </aside>
         <div
-          class="card col-md-8 col-sm-12 modal-button-section"
+          class="card col-md-8 col-sm-12 modal-button-section m-1"
           id="get-workout"
         >
           <h2>Generate your own workout based on the weather forecast...</h2>
@@ -161,7 +161,7 @@
           <button
             id="generateWorkoutBTN"
             type="button"
-            class="btn btn-primary modal-trigger-btn"
+            class="btn modal-trigger-btn"
             data-toggle="modal"
             data-target="#modalDry"
           >
@@ -247,15 +247,12 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn close-btn"
                     data-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-primary generate-workout-btn"
-                  >
+                  <button type="button" class="btn generate-workout-btn">
                     Generate Workout
                   </button>
                 </div>
@@ -329,14 +326,12 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn close-btn"
                     data-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary">
-                    Generate Workout
-                  </button>
+                  <button type="button" class="btn">Generate Workout</button>
                 </div>
               </div>
             </div>
@@ -346,16 +341,44 @@
 
       <!-- Main section -->
     </main>
-    <section class="custom-workout-section" id="custom-workout">
+    <section class="custom-workout-section text-center" id="custom-workout">
       <h2>Your Custom Workout</h2>
       <!-- TODO add boostrap slider to display exercises here ; title of exercise is <h3>-->
     </section>
-    <section class="past-workout-section" id="past-workout">
+    <section class="past-workout-section text-center" id="past-workout">
       <h2>Past Workout</h2>
       <p>See the latest workout set you generated below.</p>
-      <div class="card col-4 exercise-card"></div>
-      <div class="card col-4 exercise-card"></div>
-      <div class="card col-4 exercise-card"></div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-sm-4">
+            <div class="card exercise-card">
+              <div class="card-body">
+                <h5 class="card-title">Title of Exercise</h5>
+                <a href="#" class="btn">Show Exercise</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card exercise-card">
+              <div class="card-body">
+                <h5 class="card-title">Title of Exercise</h5>
+                <a href="#" class="btn">Show Exercise</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card exercise-card">
+              <div class="card-body">
+                <h5 class="card-title">Title of Exercise</h5>
+                <a href="#" class="btn">Show Exercise</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- TODO add section similar to exercise slider to display exercise when past exercise div is clicked; exercise titles are <h3>-->
     </section>
 

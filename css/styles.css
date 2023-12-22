@@ -19,6 +19,24 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  color: var(--text-color);
+  font-weight: bold;
+  background-color: var(--accent-color-blue);
+  font-size: 18px;
+}
+
+.btn:hover {
+  color: var(--text-color);
+  background-color: var(--accent-color-vanilla);
+}
+
+.close-btn {
+  background-color: lightgray;
 }
 
 /* Navbar styles */
@@ -68,4 +86,9 @@ h6 {
 .weather-icon {
   width: 50px;
   height: 50px;
+}
+
+.weather-widget,
+.modal-button-section {
+  background: linear-gradient(to top, white 0%, #8acdea 100%);
 }
