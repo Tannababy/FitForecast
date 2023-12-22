@@ -127,7 +127,6 @@ function search(cityInput) {
         })
         .catch(function(error){
              //setting dummy data when weather API call fails
-             console.log(error)
             setWeatherCard(weatherData.name, weatherData);
         })
 }
@@ -161,7 +160,7 @@ function errorLocation(error) {
     console.log('unable to retrieve location,got error code ' + error.code);
     console.log('defaulting to ' + defaultCity);
 
-    search(defaultCity)
+    search(defaultCity);
 }
 
 function getLocation() {
