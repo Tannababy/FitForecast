@@ -151,7 +151,14 @@ function fetchPrecipitation(lat, lon) {
 }
 
 function isIndoorWorkout() {
-    const precipitationPercentage = localStorage.getItem(localStoragePrecipKey).parseInt();
+    const value = localStorage.getItem(localStoragePrecipKey);
+    var precipitationPercentage;
+
+    if (value == '') {
+        precipitationPercentage = 0;
+    } else {
+        precipitationPercentage = value;
+    }
 
     //chance of precip - if more than 20% get indoor workout , if less than 20% show outdoor workout
     if (precipitationPercentage  > 20) {

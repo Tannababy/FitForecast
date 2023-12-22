@@ -1,3 +1,19 @@
+// ----- Generate Correct Model On Button Click ---------------------------
+const generateWorkoutBTN = $('#generateWorkoutBTN');
+
+generateWorkoutBTN.on('click', function () {
+    console.log(isIndoorWorkout());
+
+    if (isIndoorWorkout()) {
+        generateWorkoutBTN.attr("data-target", "#modalWet");
+    } else {
+        generateWorkoutBTN.attr("data-target", "#modalDry");
+    }
+})
+// ------------------------------------------------------------------------
+
+
+
 //1. Get elements from HTML
 
 //2. Set empty array of objects
