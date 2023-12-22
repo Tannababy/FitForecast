@@ -48,6 +48,22 @@ h6 {
   justify-content: center;
 }
 
+/* header text */
+.main-header-text {
+  text-shadow: 2px 2px var(--accent-color-blue);
+}
+
+.main-header-text:hover {
+  color: var(--accent-color-vanilla);
+  text-shadow: 2px 2px var(--text-color);
+}
+/* subheader text */
+.lead {
+  margin-top: -15px;
+  color: var(--accent-color-vanilla);
+  text-shadow: 1px 1px var(--text-color);
+}
+
 /* Weather widget styles */
 .weather-icon {
   width: 50px;
