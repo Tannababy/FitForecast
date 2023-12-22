@@ -139,7 +139,7 @@ function fetchPrecipitation(lat, lon){
         .then(function (data) {
             // list.pop Probability of precipitation.
             // The values of the parameter vary between 0 and 1, where 0 is equal to 0%, 1 is equal to 100%
-            console.log(data.list[0].pop);
+            console.log(data.list[0].pop)
           var precipitationRezult=data.list[0].pop;
           localStorage.setItem(localStoragePrecipKey,precipitationRezult);
         })
