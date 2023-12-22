@@ -107,13 +107,14 @@ p {
 }
 
 /* custom workout slider styles */
-/* .carousel-control-next,
+.carousel-control-next,
 .carousel-control-prev {
   border: 0px !important;
-  opacity: 10% !important;
-} */
+  background: none !important;
+}
 
-/* .carousel-control-next-icon,
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
-  color: var(--accent-color-blue) !important;
-} */
+  background-color: var(--text-color);
+  border-radius: 10px;
+}

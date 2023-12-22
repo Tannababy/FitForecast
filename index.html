@@ -341,50 +341,99 @@
 
       <!-- Main section -->
     </main>
-    <section class="custom-workout-section text-center" id="custom-workout">
-      <h2>Your Custom Workout</h2>
+    <section class="custom-workout-section" id="custom-workout">
+      <h2 class="text-center">Your Custom Workout</h2>
       <!-- TODO add boostrap slider to display exercises here ; title of exercise is <h3>-->
-        <div id="exercisesCarousel" class="carousel-dark carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!--slide 1 content-->
-            <div class="container-fluid">
-              <div class="row justify-content-center">
-                <div class="col-sm-7 exercise-instructions">
-                  <h3>Exercise title</h3>
-                  <ol>
-                    <li>Step1</li>
-                    <li>Step 2</li>
-                    <li>Step 3</li>
-                    <li>Step 4</li>
-                    <li>Step 5</li>
-                  </ol>
-                </div>
-                <div class="col-sm-4 exercise-gif">
-                  <img src="./images/logo-transparent.png" alt="">
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="carousel-item">
-              <p>Test 2</p>
-            </div>
-            <div class="carousel-item">
-              <p>Test 3</p>
-            </div>
+        <div
+  id="customExercisesCarousel"
+  class="carousel carousel-dark slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <!-- slide 1 content -->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 exercise-instructions">
+            <h3>Exercise title</h3>
+            <ol>
+              <li>Step1</li>
+              <li>Step 2</li>
+              <li>Step 3</li>
+              <li>Step 4</li>
+              <li>Step 5</li>
+            </ol>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <!-- <span class="visually-hidden">Previous</span> -->
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <!-- <span class="visually-hidden">Next</span> -->
-          </button>
+          <div class="col-sm-4 exercise-gif">
+            <img src="./images/06851301-Run_Cardio-FIX_360.gif" alt="exercise gif" />
+          </div>
         </div>
-    <section class="past-workout-section text-center" id="past-workout">
-      <h2>Past Workout</h2>
-      <p>See the latest workout set you generated below.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <!-- slide 2 content -->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 exercise-instructions">
+            <h3>Exercise title</h3>
+            <ol>
+              <li>Step1</li>
+              <li>Step 2</li>
+              <li>Step 3</li>
+              <li>Step 4</li>
+              <li>Step 5</li>
+            </ol>
+          </div>
+          <div class="col-sm-4 exercise-gif">
+            <img src="./images/17771301-Above-Head-Chest-Stretch_Chest_360.gif" alt="exercise gif" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <!-- slide 3 content -->
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 exercise-instructions">
+            <h3>Exercise title</h3>
+            <ol>
+              <li>Step1</li>
+              <li>Step 2</li>
+              <li>Step 3</li>
+              <li>Step 4</li>
+              <li>Step 5</li>
+            </ol>
+          </div>
+          <div class="col-sm-4 exercise-gif">
+            <img src="./images/19801301-Across-Chest-Shoulder-Stretch_Back-FIX_360.gif" alt="exercise gif" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#customExercisesCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <!-- <span class="visually-hidden">Previous</span> -->
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#customExercisesCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <!-- <span class="visually-hidden">Next</span> -->
+  </button>
+</div>
+
+    <section class="past-workout-section" id="past-workout">
+      <h2 class=" text-center">Past Workout</h2>
+      <p class="text-center">See the latest workout set you generated below.</p>
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm-3">
