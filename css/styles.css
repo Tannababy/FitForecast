@@ -47,6 +47,14 @@ p {
   background-color: lightgray;
 }
 
+/* backgrounds */
+
+.weather-widget,
+.modal-button-section,
+.exercise-card {
+  background: linear-gradient(to top, white 0%, #8acdea 100%);
+}
+
 /* Navbar styles */
 .navbar {
   background: var(--bg-light);
@@ -99,11 +107,6 @@ p {
 .weather-icon {
   width: 50px;
   height: 50px;
-}
-
-.weather-widget,
-.modal-button-section {
-  background: linear-gradient(to top, white 0%, #8acdea 100%);
 }
 
 /* custom workout slider styles */

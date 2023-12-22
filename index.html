@@ -61,7 +61,7 @@
               <a class="nav-link" href="#get-workout">GENERATE WORKOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#past-workout">PAST WORKOUT</a>
+              <a class="nav-link" href="#past-workout-cards">PAST WORKOUT</a>
             </li>
           </ul>
         </div>
@@ -431,12 +431,12 @@
   </button>
 </div>
 
-    <section class="past-workout-section " id="past-workout">
+    <section class="past-workout-cards-section mt-4" id="past-workout-cards">
       <h2 class=" text-center">Past Workout</h2>
       <p class="text-center">See the latest workout set you generated below.</p>
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-sm-3">
+      <div class="container-fluid col-11">
+        <div class="row  justify-content-center align-content-center text-center">
+          <div class="col-sm-4">
             <div class="card exercise-card">
               <div class="card-body">
                 <h5 class="card-title">Title of Exercise</h5>
@@ -445,7 +445,7 @@
             </div>
           </div>
 
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="card exercise-card">
               <div class="card-body">
                 <h5 class="card-title">Title of Exercise</h5>
@@ -454,7 +454,7 @@
             </div>
           </div>
 
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <div class="card exercise-card">
               <div class="card-body">
                 <h5 class="card-title">Title of Exercise</h5>
@@ -465,25 +465,33 @@
         </div>
       </div>
 
-      <div class="card col-12">
-      <div class="container-fluid  justify-content-center">
-        <div class="row justify-content-center">
-          <div class="col-sm-5 exercise-instructions">
-            <h3>Exercise title</h3>
-            <ol>
-              <li>Step1</li>
-              <li>Step 2</li>
-              <li>Step 3</li>
-              <li>Step 4</li>
-              <li>Step 5</li>
-            </ol>
-          </div>
-          <div class="col-sm-4 exercise-gif">
-            <img src="./images/17771301-Above-Head-Chest-Stretch_Chest_360.gif" alt="exercise gif" />
+      <section class="past-workout-display-section">
+        <div class="container-fluid mt-4">
+          <div class="row justify-content-center">
+            <div class="card col-11">
+              <div class="container-fluid  justify-content-center">
+                <div class="row justify-content-center">
+                  <div class="col-sm-5 exercise-instructions">
+                    <h3>Exercise title</h3>
+                    <ol>
+                      <li>Step1</li>
+                      <li>Step 2</li>
+                      <li>Step 3</li>
+                      <li>Step 4</li>
+                      <li>Step 5</li>
+                    </ol>
+                  </div>
+                  <div class="col-sm-4 exercise-gif">
+                    <img src="./images/17771301-Above-Head-Chest-Stretch_Chest_360.gif" alt="exercise gif" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-    </div>
+          
+      </section>
 
       <!-- TODO add section similar to exercise slider to display exercise when past exercise div is clicked; exercise titles are <h3>-->
     </section>
