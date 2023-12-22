@@ -6,12 +6,14 @@
   --bg-light: #fafeff;
 }
 
+/* body styles */
 body {
   font-family: "Catamaran", sans-serif;
   background: var(--bg-light);
   color: var(--text-color);
 }
 
+/* header styles */
 h1,
 h2,
 h3,
@@ -23,6 +25,12 @@ h6 {
   margin-bottom: 10px;
 }
 
+/* general text styles */
+p {
+  font-size: 17px;
+}
+
+/* button styles */
 .btn {
   color: var(--text-color);
   font-weight: bold;
@@ -50,6 +58,11 @@ h6 {
 
 .navbar-toggler {
   border-color: var(--text-color);
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: large;
 }
 
 /* Jumbotron styles*/
@@ -94,13 +107,14 @@ h6 {
 }
 
 /* custom workout slider styles */
-/* .carousel-control-next,
+.carousel-control-next,
 .carousel-control-prev {
   border: 0px !important;
-  opacity: 10% !important;
-} */
+  background: none !important;
+}
 
-/* .carousel-control-next-icon,
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
-  color: var(--accent-color-blue) !important;
-} */
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
