@@ -58,10 +58,10 @@
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">GET WORKOUT</a>
+              <a class="nav-link" href="#get-workout">GET WORKOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PAST WORKOUT</a>
+              <a class="nav-link" href="#past-workout">PAST WORKOUT</a>
             </li>
           </ul>
         </div>
@@ -130,7 +130,10 @@
             <!-- create list items to display temperature and precipitation % dynamically in JS -->
           </div>
         </aside>
-        <div class="card col-md-8 col-sm-12 modal-button-section">
+        <div
+          class="card col-md-8 col-sm-12 modal-button-section"
+          id="get-workout"
+        >
           <h2>Generate your own workout based on the weather forecast...</h2>
           <p>
             Lorem ipsum dolor sit amet et delectus accommodare his consul
@@ -327,12 +330,13 @@
 
       <!-- Main section -->
     </main>
-    <section class="custom-workout-section">
+    <section class="custom-workout-section" id="custom-workout">
       <h2>Your Custom Workout</h2>
       <!-- TODO add boostrap slider to display exercises here ; title of exercise is <h3>-->
     </section>
-    <section class="past-workout-section">
+    <section class="past-workout-section" id="past-workout">
       <h2>Past Workout</h2>
+      <p>See the latest workout set you generated below.</p>
       <div class="card col-4 exercise-card"></div>
       <div class="card col-4 exercise-card"></div>
       <div class="card col-4 exercise-card"></div>

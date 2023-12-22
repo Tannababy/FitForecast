@@ -9,6 +9,7 @@
 body {
   font-family: "Catamaran", sans-serif;
   background: var(--bg-light);
+  color: var(--text-color);
 }
 
 h1,
