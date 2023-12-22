@@ -14,6 +14,50 @@ const weatherForm = $('#search-form');
 const weatherFormInput = $('#search-input');
 var localStoragePrecipKey = "precipitation";
 
+const weatherData= {
+    "coord": {
+        "lon": -0.1275,
+        "lat": 51.5072
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 11.11,
+        "feels_like": 10.16,
+        "temp_min": 10.04,
+        "temp_max": 11.88,
+        "pressure": 1012,
+        "humidity": 72
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 8.75,
+        "deg": 280
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1703268007,
+    "sys": {
+        "type": 2,
+        "id": 2075535,
+        "country": "GB",
+        "sunrise": 1703232248,
+        "sunset": 1703260414
+    },
+    "timezone": 0,
+    "id": 2643743,
+    "name": defaultCity,
+    "cod": 200
+};
+
 //Set methods 
 function setCity(element, text) {
     currentCity = text;
@@ -53,18 +97,18 @@ function setWeatherCard(city, weather) {
 
 //
 function search(cityInput) {
-    var geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=1&appid=' + apiKey
+    var geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=1&appid=' + apiKey;
     fetch(geoUrl)
         .then(function (data) {
             return data.json()
         })
         .then(function (data) {
             // console.log(data)
-            var lat = data[0].lat
-            var lon = data[0].lon
-            var cityName = data[0].name
+            var lat = data[0].lat;
+            var lon = data[0].lon;
+            var cityName = data[0].name;
 
-            fetchPrecipitation(lat, lon)
+            fetchPrecipitation(lat, lon);
 
             var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
             fetch(weatherUrl)
@@ -72,10 +116,19 @@ function search(cityInput) {
                     return response.json();
                 })
                 .then(function (data) {
-                    // console.log(data)
+                    // console.log(data);
 
                     setWeatherCard(cityName, data);
                 })
+                .catch(function(error){
+                     //setting dummy data when weather API call fails
+                    setWeatherCard(weatherData.name, weatherData);
+                })
+        })
+        .catch(function(error){
+             //setting dummy data when weather API call fails
+             console.log(error)
+            setWeatherCard(weatherData.name, weatherData);
         })
 }
 
@@ -84,7 +137,7 @@ function search(cityInput) {
 function successLocation(locationCoords) {
     const lat = locationCoords.coords.latitude;
     const lon = locationCoords.coords.longitude;
-    fetchPrecipitation(lat, lon)
+    fetchPrecipitation(lat, lon);
 
     var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + lat + '&lon=' + lon + '&appid=' + apiKey;
     fetch(weatherUrl)
@@ -95,6 +148,10 @@ function successLocation(locationCoords) {
             // console.log(data);
 
             setWeatherCard(data.name, data);
+        })
+        .catch(function(error){
+            //setting dummy data when weather API call fails
+            setWeatherCard(weatherData.name, weatherData);
         })
 }
 
@@ -147,6 +204,10 @@ function fetchPrecipitation(lat, lon) {
 
             var precipitationRezult = data.list[0].pop * 100;
             localStorage.setItem(localStoragePrecipKey, precipitationRezult);
+        })
+        .catch(function(error){
+            //seting precipitation percentange when forecast call fails 
+            localStorage.setItem(localStoragePrecipKey, 0);
         })
 }
 
