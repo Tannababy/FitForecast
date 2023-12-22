@@ -1,3 +1,16 @@
+// ----- Generate Correct Model On Button Click ---------------------------
+const chanceOfRain = (localStorage.getItem(localStoragePrecipKey)) * 100;
+console.log(chanceOfRain);
+
+const generateWorkoutBTN = $('#generateWorkoutBTN');
+
+if (chanceOfRain > 30) {
+  generateWorkoutBTN.attr("data-target", "#modalWet");
+}
+// ------------------------------------------------------------------------
+
+
+
 //1. Get elements from HTML
 
 //2. Set empty array of objects
