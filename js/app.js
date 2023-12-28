@@ -12,7 +12,9 @@ generateWorkoutBTN.on('click', function () {
 })
 // ------------------------------------------------------------------------
 
-
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 //1. Get elements from HTML
 const muscleGroupIndoor=$('#muscle-group-indoor');
@@ -27,13 +29,14 @@ generateWorkoutIndoor.on('click', function(){
       console.log(exerciseName);
     console.log(exerciseGif);
     console.log(exerciseInstructions);
-    for(i=0; i<3; i++){
+    for(i=1; i<=3; i++){
         var exerciseTitle=exerciseName[i];
         var exerciseInstruction=exerciseInstructions[i];
         var exerciseImg=exerciseGif[i];
         var title=$('#exercise-title'+i);
-        title.text(exerciseTitle);
+        title.text(capitalizeFirstLetter(exerciseTitle));
         var instructions=$('#exercise-instruction'+i);
+        instructions.empty();
         for(a=0; a<exerciseInstruction.length; a++){
             var instruction=exerciseInstruction[a];
             var instr=$('<li>');
