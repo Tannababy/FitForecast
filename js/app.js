@@ -15,6 +15,38 @@ generateWorkoutBTN.on('click', function () {
 
 
 //1. Get elements from HTML
+const muscleGroupIndoor=$('#muscle-group-indoor');
+const equipmentIndoor=$('#equipment-indoor');
+const generateWorkoutIndoor= $('#generate-workout-indoor');
+generateWorkoutIndoor.on('click', function(){
+   var indoorMuscleGroup=muscleGroupIndoor.val();
+   var indoorEquipment=equipmentIndoor.val();
+
+    getExercises(indoorMuscleGroup,indoorEquipment)
+    .then(function(){
+      console.log(exerciseName);
+    console.log(exerciseGif);
+    console.log(exerciseInstructions);
+    for(i=0; i<3; i++){
+        var exerciseTitle=exerciseName[i];
+        var exerciseInstruction=exerciseInstructions[i];
+        var exerciseImg=exerciseGif[i];
+        var title=$('#exercise-title'+i);
+        title.text(exerciseTitle);
+        var instructions=$('#exercise-instruction'+i);
+        for(a=0; a<exerciseInstruction.length; a++){
+            var instruction=exerciseInstruction[a];
+            var instr=$('<li>');
+            instr.text(instruction);
+            instructions.append(instr);
+        }
+        var img=$('#exercise-gif'+i);
+        img.attr('src',exerciseImg);
+        img.attr('alt',exerciseTitle+ ' gif');
+    }
+})
+})
+
 
 //2. Set empty array of objects
 
@@ -33,11 +65,10 @@ generateWorkoutBTN.on('click', function () {
 // The second variable should contain a string matching one of the equipment options
 let bodyPart = "cardio"; // This needs to be set to body part user input
 let equipment = "body weight"; // This needs to be set to available equipment user input
-getExercises(bodyPart, equipment);
-console.log(exerciseName);
-console.log(exerciseGif);
-console.log(exerciseInstructions);
+
+// getExercises(bodyPart, equipment);
+// console.log(exerciseName);
+// console.log(exerciseGif);
+// console.log(exerciseInstructions);
 
 //8. Once exercise is displayed (getExercise), store data to array of objects in local storage
-var nothing = [];
-var something = [];
