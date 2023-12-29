@@ -25,7 +25,7 @@ const generateWorkoutIndoor = $('#generate-workout-indoor');
 generateWorkoutIndoor.on('click', function () {
     var indoorMuscleGroup = muscleGroupIndoor.val();
     var indoorEquipment = equipmentIndoor.val();
-//get exercises based on user input
+    //get exercises based on user input
     getExercises(indoorMuscleGroup, indoorEquipment)
         .then(function () {
             //iterate through exercises, we always have three exercises
