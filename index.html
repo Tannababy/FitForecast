@@ -202,11 +202,11 @@
                   <!-- options for body part (muscle group) -->
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01"
+                      <label class="input-group-text" for="muscle-group-indoor"
                         >Muscle Group</label
                       >
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select" id="muscle-group-indoor">
                       <option selected>Select one from below</option>
                       <option value="back">back</option>
                       <option value="cardio">cardio</option>
@@ -224,11 +224,11 @@
                   <!-- options for equipment -->
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01"
+                      <label class="input-group-text" for="equipment-indoor"
                         >Equipment</label
                       >
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select" id="equipment-indoor">
                       <option selected>Select one from below</option>
                       <option value="barbell">barbell</option>
                       <option value="body weight, = No Equipment">
@@ -252,7 +252,7 @@
                   >
                     Close
                   </button>
-                  <button type="button" class="btn generate-workout-btn">
+                  <button type="button" data-dismiss="modal" class="btn generate-workout-btn" id="generate-workout-indoor">
                     Generate Workout
                   </button>
                 </div>
@@ -356,8 +356,8 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm-5 exercise-instructions">
-            <h3>Exercise title</h3>
-            <ol>
+            <h3 id="exercise-title0">Exercise title</h3>
+            <ol id="exercise-instruction0">
               <li>Step1</li>
               <li>Step 2</li>
               <li>Step 3</li>
@@ -366,7 +366,7 @@
             </ol>
           </div>
           <div class="col-sm-4 exercise-gif">
-            <img src="./images/06851301-Run_Cardio-FIX_360.gif" alt="exercise gif" />
+            <img src="./images/06851301-Run_Cardio-FIX_360.gif" alt="exercise gif" id="exercise-gif0"/>
           </div>
         </div>
       </div>
@@ -376,8 +376,8 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm-5 exercise-instructions">
-            <h3>Exercise title</h3>
-            <ol>
+            <h3 id="exercise-title1">Exercise title</h3>
+            <ol id="exercise-instruction1">
               <li>Step1</li>
               <li>Step 2</li>
               <li>Step 3</li>
@@ -385,8 +385,8 @@
               <li>Step 5</li>
             </ol>
           </div>
-          <div class="col-sm-4 exercise-gif">
-            <img src="./images/17771301-Above-Head-Chest-Stretch_Chest_360.gif" alt="exercise gif" />
+          <div class="col-sm-4 exercise-gif" >
+            <img src="./images/17771301-Above-Head-Chest-Stretch_Chest_360.gif" alt="exercise gif" id="exercise-gif1" />
           </div>
         </div>
       </div>
@@ -396,8 +396,8 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-sm-5 exercise-instructions">
-            <h3>Exercise title</h3>
-            <ol>
+            <h3 id="exercise-title2">Exercise title</h3>
+            <ol id="exercise-instruction2">
               <li>Step1</li>
               <li>Step 2</li>
               <li>Step 3</li>
@@ -405,8 +405,8 @@
               <li>Step 5</li>
             </ol>
           </div>
-          <div class="col-sm-4 exercise-gif">
-            <img src="./images/19801301-Across-Chest-Shoulder-Stretch_Back-FIX_360.gif" alt="exercise gif" />
+          <div class="col-sm-4 exercise-gif" >
+            <img src="./images/19801301-Across-Chest-Shoulder-Stretch_Back-FIX_360.gif" alt="exercise gif" id="exercise-gif2"/>
           </div>
         </div>
       </div>
