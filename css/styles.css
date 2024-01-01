@@ -6,6 +6,11 @@
   --bg-light: #fafeff;
 }
 
+/* Items to be hidden */
+.hidden {
+  display: none;
+}
+
 /* body styles */
 body {
   font-family: "Catamaran", sans-serif;
