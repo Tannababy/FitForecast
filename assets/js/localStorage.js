@@ -98,8 +98,6 @@ buttonThree.on("click", function () {
 
   pastGif.attr("src", savedExerciseGif[2]);
 
-  pastInstructions.empty();
-
   // show past exercise slider on click
   pastExerciseSlider.removeClass("hidden");
 });
