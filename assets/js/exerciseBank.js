@@ -86,7 +86,7 @@ const outdoorExerciseObjects = [
           "If heart rate goes higher, ease off, if it drops below 110 push harder",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
-      }
+      },
     ],
   ],
   [
@@ -127,7 +127,7 @@ const outdoorExerciseObjects = [
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
         gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
-      }
+      },
     ],
   ],
   [
@@ -181,7 +181,7 @@ const outdoorExerciseObjects = [
         instructions: [
           "Take it easy, no nead to break a sweat",
           "Just take gentle, maintain a steady pace",
-          "Continue for you selected time"
+          "Continue for you selected time",
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
@@ -192,7 +192,7 @@ const outdoorExerciseObjects = [
           "On go, give 10 very rapid short pushes",
           "Continue for ten full, long pushes",
           "Return to the start or if on rollers, allow the wheels to stop",
-          "Repeat. Aim to do a minimum of 5 starts"
+          "Repeat. Aim to do a minimum of 5 starts",
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
@@ -202,7 +202,7 @@ const outdoorExerciseObjects = [
           "Warm Up with an easy 1k",
           "Go 200m maximum effort",
           "Recover with gentle roll for 200m",
-          "Repeat for as many repetitions as you are aiming for"
+          "Repeat for as many repetitions as you are aiming for",
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
@@ -213,7 +213,7 @@ const outdoorExerciseObjects = [
           "Push hard for 200 metres, gentle roll for 200 metres",
           "Repeat for 300m hard, 200m recovery, then 400m hard 200m, Then 500m hard, 200m Recovery",
           "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
-          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
+          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back",
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
@@ -224,7 +224,7 @@ const outdoorExerciseObjects = [
           "If using weights aim for 3kg on each roller",
           "Push hard for 500m, aim to have enough pace that you can stop for ten 10 seconds without the wheels losing all momentum",
           "For 200m keep pushing just enough to maintain momentum",
-          "Repeat, looking for a minimum of 3k total distance"
+          "Repeat, looking for a minimum of 3k total distance",
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
@@ -235,7 +235,7 @@ const outdoorExerciseObjects = [
           "Take it easy on the straights, use both hands but easy pace",
           "On the corners, use compensator and steer with one hand only, using the other to keep pushing",
           "Recover again on the straights",
-          "Important to change direction periodically to ensure both arms get similar workout"
+          "Important to change direction periodically to ensure both arms get similar workout",
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
@@ -250,7 +250,7 @@ const outdoorExerciseObjects = [
         ],
         gifUrl: "./assets/images/wheelchair.gif",
       },
-    ]
+    ],
   ],
 ];
 
