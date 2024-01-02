@@ -60,6 +60,9 @@ buttonOne.on("click", function (event) {
   }
 
   pastGif.attr("src", savedExerciseGif[0]);
+
+  // show past exercise slider on click
+  pastExerciseSlider.removeClass("hidden");
 });
 
 buttonTwo.on("click", function (event) {
@@ -67,6 +70,7 @@ buttonTwo.on("click", function (event) {
 
   pastInstructions.empty();
   //create a new list with intructions Button 2
+  //create a new list with intructions
   for (a = 0; a < savedExerciseInstructions[1].length; a++) {
     var instruction = savedExerciseInstructions[1][a];
     var instr = $("<li>");
@@ -75,6 +79,9 @@ buttonTwo.on("click", function (event) {
   }
 
   pastGif.attr("src", savedExerciseGif[1]);
+
+  // show past exercise slider on click
+  pastExerciseSlider.removeClass("hidden");
 });
 
 buttonThree.on("click", function (event) {
@@ -90,4 +97,18 @@ buttonThree.on("click", function (event) {
   }
 
   pastGif.attr("src", savedExerciseGif[2]);
+
+  pastInstructions.empty();
+  //create a new list with intructions
+  for (a = 0; a < savedExerciseInstructions[2].length; a++) {
+    var instruction = savedExerciseInstructions[2][a];
+    var instr = $("<li>");
+    instr.text(instruction);
+    pastInstructions.append(instr);
+  }
+
+  pastGif.attr("src", savedExerciseGif[2]);
+
+  // show past exercise slider on click
+  pastExerciseSlider.removeClass("hidden");
 });
