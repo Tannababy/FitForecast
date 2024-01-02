@@ -85,7 +85,7 @@ const outdoorExerciseObjects = [
           "Maintain this for alloted time",
           "If heart rate goes higher, ease off, if it drops below 110 push harder",
         ],
-        gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif"
+        gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       }
     ],
   ],
@@ -98,7 +98,7 @@ const outdoorExerciseObjects = [
           "A gentle walk aiming for just a step goal",
           "Try to get around 5,000 steps",
         ],
-        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       },
       {
         name: "Brisk Walk",
@@ -108,7 +108,7 @@ const outdoorExerciseObjects = [
           "You should be looking at getting slightly out of breath",
           "Maintain for your selected time",
         ],
-        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       },
       {
         name: "Nordick Walk",
@@ -117,7 +117,7 @@ const outdoorExerciseObjects = [
           "This in turn engages 90% of the major muscles and shares the load between upper and lower body.",
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
-        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       },
       {
         name: "Hill Walking",
@@ -126,7 +126,7 @@ const outdoorExerciseObjects = [
           "This in turn engages 90% of the major muscles and shares the load between upper and lower body.",
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
-        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       }
     ],
   ],
@@ -140,7 +140,7 @@ const outdoorExerciseObjects = [
           "Just take gentle, maintain a steady pace",
           "Continue for you selected time",
         ],
-        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
       {
         name: "Hills Ride",
@@ -150,7 +150,7 @@ const outdoorExerciseObjects = [
           "Relax On downhills and prepare to go again",
           "Repeat for as you long as you are able to",
         ],
-        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
       {
         name: "Go the Distance",
@@ -159,7 +159,7 @@ const outdoorExerciseObjects = [
           "Look to achieve thatgoal maintaining a consistent pace throughout the ride",
           "The key here is not to go to quick as it is all about that steady pace",
         ],
-        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
       {
         name: "Short Sprints",
@@ -169,7 +169,7 @@ const outdoorExerciseObjects = [
           "Come to a complete stop before repeating",
           "Repeat for as many repetitions as you are aiming for",
         ],
-        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
     ],
   ],
@@ -183,7 +183,7 @@ const outdoorExerciseObjects = [
           "Just take gentle, maintain a steady pace",
           "Continue for you selected time"
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
       {
         name: "Starts",
@@ -194,7 +194,7 @@ const outdoorExerciseObjects = [
           "Return to the start or if on rollers, allow the wheels to stop",
           "Repeat. Aim to do a minimum of 5 starts"
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
       {
         name: "Fartlek",
@@ -204,7 +204,7 @@ const outdoorExerciseObjects = [
           "Recover with gentle roll for 200m",
           "Repeat for as many repetitions as you are aiming for"
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
       {
         name: "Pyramid",
@@ -215,7 +215,7 @@ const outdoorExerciseObjects = [
           "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
           "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
       {
         name: "Rollers",
@@ -226,7 +226,7 @@ const outdoorExerciseObjects = [
           "For 200m keep pushing just enough to maintain momentum",
           "Repeat, looking for a minimum of 3k total distance"
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
       {
         name: "Steering",
@@ -237,7 +237,7 @@ const outdoorExerciseObjects = [
           "Recover again on the straights",
           "Important to change direction periodically to ensure both arms get similar workout"
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
       {
         name: "Alternating hands",
@@ -248,7 +248,7 @@ const outdoorExerciseObjects = [
           "100m recivery using both arms, just enough push to maintain momentum",
           "Repeat for as many repetitions as you are aiming for",
         ],
-        gifUrl: "./assets/images/wheelchair.gif"
+        gifUrl: "./assets/images/wheelchair.gif",
       },
     ]
   ],
