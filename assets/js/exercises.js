@@ -68,48 +68,6 @@ function filteredDataResponse(data, equipment) {
   }
 }
 
-// Parameters for ExerciseDB API
-/*  'equipment'
-            barbell,
-            body weight, = No Equipment
-            cable,
-            dumbbell,
-            kettlebell,
-            resistance band,
-            weighted,
-
-    'bodyPart'
-            back,
-            cardio,
-            chest,
-            lower arms,
-            lower legs,
-            neck,
-            shoulders,
-            upper arms,
-            upper legs,
-            waist        
-*/
-
-function shuffle(array) {
-  let currentIndex = array.length, randomIndex;
-
-  // While there remain elements to shuffle.
-  while (currentIndex > 0) {
-
-    // Pick a remaining element.
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
-  }
-
-  return array;
-}
-
-
 function getOutdoorExercises(typeOfExercise) {
   for (i = 0; i < outdoorExerciseObjects.length; i++) {
     var exerciseGroup = outdoorExerciseObjects[i];
