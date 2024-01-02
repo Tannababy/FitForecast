@@ -14,6 +14,8 @@ N/A
 
 ## Usage
 
+![Demo of FitForecast web application](./assets/images/demoGif.gif)
+
 ## Credits
 
 Overall instruction and provision of necessary materials for this project from the EdX Front-End Web Development Bootcamp instructor and teaching assistants (Oct2023 Cohort).
