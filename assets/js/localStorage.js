@@ -58,6 +58,7 @@ buttonOne.on("click", function (event) {
 
   pastGif.attr("src", savedExerciseGif[0]);
 
+  // show past exercise slider
   pastExerciseSlider.removeClass("hidden");
 });
 
@@ -75,6 +76,7 @@ buttonTwo.on("click", function (event) {
 
   pastGif.attr("src", savedExerciseGif[1]);
 
+  // show past exercise slider
   pastExerciseSlider.removeClass("hidden");
 });
 
@@ -92,5 +94,6 @@ buttonThree.on("click", function (event) {
 
   pastGif.attr("src", savedExerciseGif[2]);
 
+  // show past exercise slider
   pastExerciseSlider.removeClass("hidden");
 });
