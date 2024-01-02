@@ -3,7 +3,7 @@ const generateWorkoutBTN = $("#generateWorkoutBTN");
 
 //create the event handler to show correct modal view
 generateWorkoutBTN.on("click", function () {
-  //console.log(isIndoorWorkout());
+  
   if (isIndoorWorkout()) {
     generateWorkoutBTN.attr("data-target", "#modalWet");
   } else {
@@ -37,6 +37,15 @@ generateWorkoutIndoor.on("click", function () {
       var exerciseTitle = exerciseName[i];
       var exerciseInstruction = exerciseInstructions[i];
       var exerciseImg = exerciseGif[i];
+
+      // Add previous exercises to Local Storage
+      savedExerciseTitle.unshift(exerciseTitle);
+      savedExerciseInstructions.unshift(exerciseInstruction);
+      savedExerciseGif.unshift(exerciseImg);
+      localStorage.setItem("savedExerciseTitle", JSON.stringify(savedExerciseTitle));
+      localStorage.setItem("savedExerciseInstructions", JSON.stringify(savedExerciseInstructions));
+      localStorage.setItem("savedExerciseGif", JSON.stringify(savedExerciseGif));
+
       //set capitalize title
       var title = $("#exercise-title" + i);
       title.text(capitalizeFirstLetter(exerciseTitle));
