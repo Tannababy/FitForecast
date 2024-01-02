@@ -123,3 +123,12 @@ p {
   background-color: var(--text-color);
   border-radius: 10px;
 }
+
+/* past workout cards */
+.pastWorkoutCards {
+  max-height: fit-content;
+}
+
+.pastExerciseTitles {
+  font-size: 18px;
+}

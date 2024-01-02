@@ -3,7 +3,6 @@ const generateWorkoutBTN = $("#generateWorkoutBTN");
 
 //create the event handler to show correct modal view
 generateWorkoutBTN.on("click", function () {
-  
   if (isIndoorWorkout()) {
     generateWorkoutBTN.attr("data-target", "#modalWet");
   } else {
@@ -42,9 +41,18 @@ generateWorkoutIndoor.on("click", function () {
       savedExerciseTitle.unshift(exerciseTitle);
       savedExerciseInstructions.unshift(exerciseInstruction);
       savedExerciseGif.unshift(exerciseImg);
-      localStorage.setItem("savedExerciseTitle", JSON.stringify(savedExerciseTitle));
-      localStorage.setItem("savedExerciseInstructions", JSON.stringify(savedExerciseInstructions));
-      localStorage.setItem("savedExerciseGif", JSON.stringify(savedExerciseGif));
+      localStorage.setItem(
+        "savedExerciseTitle",
+        JSON.stringify(savedExerciseTitle)
+      );
+      localStorage.setItem(
+        "savedExerciseInstructions",
+        JSON.stringify(savedExerciseInstructions)
+      );
+      localStorage.setItem(
+        "savedExerciseGif",
+        JSON.stringify(savedExerciseGif)
+      );
 
       //set capitalize title
       var title = $("#exercise-title" + i);
@@ -78,38 +86,35 @@ const WalkingGif = "./images/36561301-Short-Stride-Run_Cardio_360.gif";
 const CyclingGif = "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif";
 const WheelchairGif = "./images/wheelchair.gif";
 
-
 // add the event handler to submit user selections
 generateWorkoutOutdoor.on("click", function () {
-
+  // remove placholder text from workout slider
   workoutPlaceholder.addClass("hidden");
 
-  let exerciseChoiceValue = exerciseChoice.val()
-  console.log(exerciseChoiceValue)
+  let exerciseChoiceValue = exerciseChoice.val();
+  console.log(exerciseChoiceValue);
   var exerciseImg = WheelchairGif;
-  if (exerciseChoiceValue == "running") { 
-    j = 0; 
-    exerciseImg = RunningGif 
-  } else if (exerciseChoiceValue == "walking") { 
-    j = 1; 
-    exerciseImg = WalkingGif 
-  }
-  else if (exerciseChoiceValue == "cycling") { 
-    j = 2; 
-    exerciseImg = CyclingGif 
-  }
-  else { 
-    j = 3; 
-    exerciseImg = WheelchairGif 
-    
+  if (exerciseChoiceValue == "running") {
+    j = 0;
+    exerciseImg = RunningGif;
+  } else if (exerciseChoiceValue == "walking") {
+    j = 1;
+    exerciseImg = WalkingGif;
+  } else if (exerciseChoiceValue == "cycling") {
+    j = 2;
+    exerciseImg = CyclingGif;
+  } else {
+    j = 3;
+    exerciseImg = WheelchairGif;
   }
 
   // Images
-  for (let i = 0; i < 3; i++ ) {
+  for (let i = 0; i < 3; i++) {
     var img = $("#exercise-gif" + i);
     img.attr("src", exerciseImg);
-    img.attr("style", "width: 320px")
+    img.attr("style", "width: 320px");
   }
 
+  // show the workout slider
   exercisesCarousel.removeClass("hidden");
 });
