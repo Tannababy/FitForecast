@@ -83,8 +83,9 @@ generateWorkoutIndoor.on("click", function () {
   getExercises(indoorMuscleGroup, indoorEquipment).then(function () {
     // remove placholder text from workout slider
     workoutPlaceholder.addClass("hidden");
-
+    
     populateCurrentWorkouts();
+
     // show the workout slider
     exercisesCarousel.removeClass("hidden");
     yourCustomWorkout.text('Your Custom Workout');

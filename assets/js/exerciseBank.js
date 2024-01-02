@@ -1,4 +1,4 @@
-// Create Object Array Of Running - Cycling & Walking Exercises
+// Object Array Of Running - Cycling & Walking Exercises
 const outdoorExerciseObjects = [
   [
     "Running",
@@ -9,7 +9,7 @@ const outdoorExerciseObjects = [
           "Run at a gentle pace for your selected time",
           "Try to maintain a pace that feels comfortable and doesn't leave you breathing heavy",
           "If you begin to feel out of breath, try to slow your run while avoiding walking",
-          "Focus on running for the selected time, not pace"
+          "Focus on running for the selected time, not pace",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -19,7 +19,7 @@ const outdoorExerciseObjects = [
           "This is the run you train for",
           "You are aiming for maximum pace, Give it everything you've got for your selected time",
           "This is a max effort run, aim for PB, when you feel tired, push forward",
-          "If running more than 30 minutes remember to hydrate at 30 minute intervals"
+          "If running more than 30 minutes remember to hydrate at 30 minute intervals",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -30,7 +30,7 @@ const outdoorExerciseObjects = [
           "Sprint for 200 metres, walk or recovery run for 200 metres",
           "Repeat for 300m Run, 200m recovery, then 400m Run 200m, Then 500m Run, 200m Recovery",
           "You've reached the top of of the Pyramid, now down to 400m run, 200m recovery, then repeat the steps for 300m then 200m",
-          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
+          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -41,7 +41,7 @@ const outdoorExerciseObjects = [
           "Start by running until you begin to feel tired but are not completely out of breath",
           "Walk for 130 seconds, this should be long enough to recover your breathing pattern and lower your heart rate",
           "Repeat the second step, don't be put of if you run a shorter distance, that is to be expected",
-          "Continue repeating these steps for your selected time"
+          "Continue repeating these steps for your selected time",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -53,7 +53,7 @@ const outdoorExerciseObjects = [
           "Find your nearest, short but steep hill",
           "Run up the hill giving it maximum effort",
           "Gentle jog back down, allow gravity to do the work here while you recover",
-          "Repeat for as many reps as you are aiming for"
+          "Repeat for as many reps as you are aiming for",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -62,7 +62,7 @@ const outdoorExerciseObjects = [
         instructions: [
           "This is all about distance",
           "Find a comfortable, but fast past, you will maintain this throughout with any recovery",
-          "Goal is to cover as much distance in the time you have"
+          "Goal is to cover as much distance in the time you have",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -73,7 +73,7 @@ const outdoorExerciseObjects = [
           "Have a gentle jog to warm up the muscles",
           "Sprint for 200m, 100% effort as fast as your legs will go",
           "Walk to recover, let your breathing stabilise",
-          "Repeat for as many reps as you are aiming for"
+          "Repeat for as many reps as you are aiming for",
         ],
         gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -85,11 +85,12 @@ const outdoorExerciseObjects = [
           "Maintain this for alloted time",
           "If heart rate goes higher, ease off, if it drops below 110 push harder",
         ],
-        gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
+        gifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif"
       }
     ],
   ],
-  ["Walking", 
+  [
+    "Walking",
     [
       {
         name: "Step Goal",
@@ -105,7 +106,7 @@ const outdoorExerciseObjects = [
           "Here you are looking at getting your heart rate up",
           "Walk at a steady, but fast pace",
           "You should be looking at getting slightly out of breath",
-          "Maintain for your selected time"
+          "Maintain for your selected time",
         ],
         gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
       },
@@ -129,13 +130,15 @@ const outdoorExerciseObjects = [
       }
     ],
   ],
-  ["Cycling", [
+  [
+    "Cycling",
+    [
       {
         name: "Gentle Bike Ride",
         instructions: [
           "Take it easy, no nead to break a sweat",
           "Just take gentle, maintain a steady pace",
-          "Continue for you selected time"
+          "Continue for you selected time",
         ],
         gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
@@ -145,7 +148,7 @@ const outdoorExerciseObjects = [
           "Get up those hills",
           "Focus on remaining seated and using leg power not body weight to power up",
           "Relax On downhills and prepare to go again",
-          "Repeat for as you long as you are able to"
+          "Repeat for as you long as you are able to",
         ],
         gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
@@ -154,7 +157,7 @@ const outdoorExerciseObjects = [
         instructions: [
           "Set yourself a distance goal",
           "Look to achieve thatgoal maintaining a consistent pace throughout the ride",
-          "The key here is not to go to quick as it is all about that steady pace"
+          "The key here is not to go to quick as it is all about that steady pace",
         ],
         gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
@@ -164,11 +167,11 @@ const outdoorExerciseObjects = [
           "Getting those starts right is important in any race",
           "Start from stationary, push as hard as possible for 500m",
           "Come to a complete stop before repeating",
-          "Repeat for as many repetitions as you are aiming for"
+          "Repeat for as many repetitions as you are aiming for",
         ],
         gifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
-    ]
+    ],
   ],
   ["Wheelchair Racing", [
     {
