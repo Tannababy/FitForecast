@@ -59,23 +59,48 @@ generateWorkoutIndoor.on("click", function () {
   });
 });
 
-//2. Set empty array of objects
+// -----------------------------------------------------------
+// Outdoor Workouts
+const generateWorkoutOutdoor = $("#generate-workout-outdoor");
+const exerciseChoice = $("#exerciseChoice");
 
-//3. If history = true, display array of objects (showPrevWorkout) from history in 'past workouts' section.
+const RunningGif = "./images/06851301-Run_Cardio-FIX_360.gif";
+const WalkingGif = "./images/36561301-Short-Stride-Run_Cardio_360.gif";
+const CyclingGif = "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif";
+const WheelchairGif = "./images/wheelchair.gif";
 
-//4. Function showPrevWorkout to display max 3 workouts stored in local storage.
 
-//5. Pull today's date and display it - Day.js
+// add the event handler to submit user selections
+generateWorkoutOutdoor.on("click", function () {
 
-//6. Call the getWeather function from weather.js
+  workoutPlaceholder.addClass("hidden");
 
-//7. Event handler for modalBtn to look at weather and display modal depending on the weather - chance of precip - if more than 20% get indoor workout , if less than 20% show outdoor workout
+  let exerciseChoiceValue = exerciseChoice.val()
+  console.log(exerciseChoiceValue)
+  var exerciseImg = WheelchairGif;
+  if (exerciseChoiceValue == "running") { 
+    j = 0; 
+    exerciseImg = RunningGif 
+  } else if (exerciseChoiceValue == "walking") { 
+    j = 1; 
+    exerciseImg = WalkingGif 
+  }
+  else if (exerciseChoiceValue == "cycling") { 
+    j = 2; 
+    exerciseImg = CyclingGif 
+  }
+  else { 
+    j = 3; 
+    exerciseImg = WheelchairGif 
+    
+  }
 
-// Call the getExercise function passing in two variables.
-// The first variable should contain a string matching one of the bodyPart options
-// The second variable should contain a string matching one of the equipment options
-//let bodyPart = "upper arms"; // This needs to be set to body part user input
-//let equipment = "dumbbells"; // This needs to be set to available equipment user input
-//getExercises(bodyPart, equipment);
+  // Images
+  for (let i = 0; i < 3; i++ ) {
+    var img = $("#exercise-gif" + i);
+    img.attr("src", exerciseImg);
+    img.attr("style", "width: 320px")
+  }
 
-//8. Once exercise is displayed (getExercise), store data to array of objects in local storage
+  exercisesCarousel.removeClass("hidden");
+});

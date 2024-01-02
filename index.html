@@ -297,12 +297,12 @@
                         >Type of Exercise</label
                       >
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select" id="exerciseChoice">
                       <option selected>Select one from below</option>
                       <option value="running">running</option>
                       <option value="walking">walking</option>
                       <option value="cycling">cycling</option>
-                      <option value="cycling">wheelchair racing</option>
+                      <option value="wheelchair">wheelchair racing</option>
                     </select>
                   </div>
 
@@ -313,7 +313,7 @@
                         >Duration</label
                       >
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
+                    <select class="custom-select" id="selectedTime">
                       <option selected>Select from below</option>
                       <option value="15 min">15 min</option>
                       <option value="30 min">30 min</option>
@@ -332,7 +332,10 @@
                   >
                     Close
                   </button>
-                  <button type="button" class="btn">Generate Workout</button>
+                  <button 
+                  id="generate-workout-outdoor" 
+                  type="button" 
+                  class="btn">Generate Workout</button>
                 </div>
               </div>
             </div>
