@@ -81,10 +81,10 @@ generateWorkoutIndoor.on("click", function () {
 const generateWorkoutOutdoor = $("#generate-workout-outdoor");
 const exerciseChoice = $("#exerciseChoice");
 
-const RunningGif = "./images/06851301-Run_Cardio-FIX_360.gif";
-const WalkingGif = "./images/36561301-Short-Stride-Run_Cardio_360.gif";
-const CyclingGif = "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif";
-const WheelchairGif = "./images/wheelchair.gif";
+const RunningGif = "./assets/images/06851301-Run_Cardio-FIX_360.gif";
+const WalkingGif = "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif";
+const CyclingGif = "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif";
+const WheelchairGif = "./assets/images/wheelchair.gif";
 
 // add the event handler to submit user selections
 generateWorkoutOutdoor.on("click", function () {

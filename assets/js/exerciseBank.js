@@ -11,7 +11,7 @@ const outdoorExerciseObjects = [
           "If you begin to feel out of breath, try to slow your run while avoiding walking",
           "Focus on running for the selected time, not pace"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       {
         Name: "Race Pace",
@@ -21,7 +21,7 @@ const outdoorExerciseObjects = [
           "This is a max effort run, aim for PB, when you feel tired, push forward",
           "If running more than 30 minutes remember to hydrate at 30 minute intervals"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       {
         Name: "The Pyramid",
@@ -32,7 +32,7 @@ const outdoorExerciseObjects = [
           "You've reached the top of of the Pyramid, now down to 400m run, 200m recovery, then repeat the steps for 300m then 200m",
           "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       {
         Name: "Jeffing",
@@ -43,7 +43,7 @@ const outdoorExerciseObjects = [
           "Repeat the second step, don't be put of if you run a shorter distance, that is to be expected",
           "Continue repeating these steps for your selected time"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       ,
       {
@@ -55,7 +55,7 @@ const outdoorExerciseObjects = [
           "Gentle jog back down, allow gravity to do the work here while you recover",
           "Repeat for as many reps as you are aiming for"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       {
         Name: "The Long Run",
@@ -64,7 +64,7 @@ const outdoorExerciseObjects = [
           "Find a comfortable, but fast past, you will maintain this throughout with any recovery",
           "Goal is to cover as much distance in the time you have"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       {
         Name: "Sprints",
@@ -75,7 +75,7 @@ const outdoorExerciseObjects = [
           "Walk to recover, let your breathing stabilise",
           "Repeat for as many reps as you are aiming for"
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
       {
         Name: "Heart Rate Run",
@@ -85,7 +85,7 @@ const outdoorExerciseObjects = [
           "Maintain this for alloted time",
           "If heart rate goes higher, ease off, if it drops below 110 push harder",
         ],
-        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+        GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       }
     ],
   ],
@@ -97,7 +97,7 @@ const outdoorExerciseObjects = [
           "A gentle walk aiming for just a step goal",
           "Try to get around 5,000 steps",
         ],
-        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
       },
       {
         Name: "Brisk Walk",
@@ -107,7 +107,7 @@ const outdoorExerciseObjects = [
           "You should be looking at getting slightly out of breath",
           "Maintain for your selected time"
         ],
-        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
       },
       {
         Name: "Nordick Walk",
@@ -116,7 +116,7 @@ const outdoorExerciseObjects = [
           "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
-        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
       },
       {
         Name: "Hill Walking",
@@ -125,7 +125,7 @@ const outdoorExerciseObjects = [
           "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
-        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
       }
     ],
   ],
@@ -137,7 +137,7 @@ const outdoorExerciseObjects = [
           "Just take gentle, maintain a steady pace",
           "Continue for you selected time"
         ],
-        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
       {
         Name: "Hills Ride",
@@ -147,7 +147,7 @@ const outdoorExerciseObjects = [
           "Relax On downhills and prepare to go again",
           "Repeat for as you long as you are able to"
         ],
-        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
       {
         Name: "Go the Distance",
@@ -156,7 +156,7 @@ const outdoorExerciseObjects = [
           "Look to achieve thatgoal maintaining a consistent pace throughout the ride",
           "The key here is not to go to quick as it is all about that steady pace"
         ],
-        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
       {
         Name: "Short Sprints",
@@ -166,7 +166,7 @@ const outdoorExerciseObjects = [
           "Come to a complete stop before repeating",
           "Repeat for as many repetitions as you are aiming for"
         ],
-        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
     ]
   ],
@@ -178,7 +178,7 @@ const outdoorExerciseObjects = [
         "Just take gentle, maintain a steady pace",
         "Continue for you selected time"
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     {
       Name: "Starts",
@@ -189,7 +189,7 @@ const outdoorExerciseObjects = [
         "Return to the start or if on rollers, allow the wheels to stop",
         "Repeat. Aim to do a minimum of 5 starts"
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     {
       Name: "Fartlek",
@@ -199,7 +199,7 @@ const outdoorExerciseObjects = [
         "Recover with gentle roll for 200m",
         "Repeat for as many repetitions as you are aiming for"
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     {
       Name: "Pyramid",
@@ -210,7 +210,7 @@ const outdoorExerciseObjects = [
         "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
         "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     {
       Name: "Rollers",
@@ -221,7 +221,7 @@ const outdoorExerciseObjects = [
         "For 200m keep pushing just enough to maintain momentum",
         "Repeat, looking for a minimum of 3k total distance"
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     {
       Name: "Steering",
@@ -232,7 +232,7 @@ const outdoorExerciseObjects = [
         "Recover again on the straights",
         "Important to change direction periodically to ensure both arms get similar workout"
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     {
       Name: "Alternating hands",
@@ -243,7 +243,7 @@ const outdoorExerciseObjects = [
         "100m recivery using both arms, just enough push to maintain momentum",
         "Repeat for as many repetitions as you are aiming for",
       ],
-      GifUrl: "./images/wheelchair.gif"
+      GifUrl: "./assets/images/wheelchair.gif"
     },
     ]
   ],
