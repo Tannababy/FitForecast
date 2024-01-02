@@ -42,6 +42,7 @@ generateWorkoutIndoor.on("click", function () {
       savedExerciseTitle.unshift(exerciseTitle);
       savedExerciseInstructions.unshift(exerciseInstruction);
       savedExerciseGif.unshift(exerciseImg);
+
       localStorage.setItem("savedExerciseTitle", JSON.stringify(savedExerciseTitle));
       localStorage.setItem("savedExerciseInstructions", JSON.stringify(savedExerciseInstructions));
       localStorage.setItem("savedExerciseGif", JSON.stringify(savedExerciseGif));
