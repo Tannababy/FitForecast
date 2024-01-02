@@ -150,20 +150,21 @@ const outdoorExerciseObjects = [
         GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
       {
-        Name: "Gentle Bike Ride",
+        Name: "Go the Distance",
         Instructions: [
-          "Take it easy, no nead to break a sweat",
-          "Just take gentle, maintain a steady pace",
-          "Continue for you selected time"
+          "Set yourself a distance goal",
+          "Look to achieve thatgoal maintaining a consistent pace throughout the ride",
+          "The key here is not to go to quick as it is all about that steady pace"
         ],
         GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
       {
-        Name: "Gentle Bike Ride",
+        Name: "Short Sprints",
         Instructions: [
-          "Take it easy, no nead to break a sweat",
-          "Just take gentle, maintain a steady pace",
-          "Continue for you selected time"
+          "Getting those starts right is important in any race",
+          "Start from stationary, push as hard as possible for 500m",
+          "Come to a complete stop before repeating",
+          "Repeat for as many repetitions as you are aiming for"
         ],
         GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
       },
