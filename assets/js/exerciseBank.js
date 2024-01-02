@@ -113,8 +113,8 @@ const outdoorExerciseObjects = [
       {
         name: "Nordick Walk",
         instructions: [
-          "This action involves a straight armswing, good stride and a roll through the foot", 
-          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
+          "This action involves a straight armswing, good stride and a roll through the foot",
+          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.",
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
         gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
@@ -122,8 +122,8 @@ const outdoorExerciseObjects = [
       {
         name: "Hill Walking",
         instructions: [
-          "Find a Nice Hilly Route", 
-          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
+          "Find a Nice Hilly Route",
+          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.",
           "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
         ],
         gifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
@@ -173,7 +173,8 @@ const outdoorExerciseObjects = [
       },
     ],
   ],
-  ["Wheelchair Racing", [
+  [
+    "Wheelchair Racing", [
     {
       name: "Easy Pace",
       instructions: [
@@ -248,7 +249,7 @@ const outdoorExerciseObjects = [
       ],
       gifUrl: "./assets/images/wheelchair.gif"
     },
-    ]
+  ]
   ],
 ];
 

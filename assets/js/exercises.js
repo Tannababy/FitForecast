@@ -7,10 +7,10 @@ let exerciseGif = [];
 let exerciseInstructions = [];
 
 const options = {
-  method: 'GET',
+  method: "GET",
   headers: {
-    'X-RapidAPI-Key': 'e5fb04e46cmsh7eff4095bdba1d2p1eed4bjsn3f37861064db',
-    'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+    "X-RapidAPI-Key": "e5fb04e46cmsh7eff4095bdba1d2p1eed4bjsn3f37861064db",
+    "X-RapidAPI-Host": "exercisedb.p.rapidapi.com"
   }
 };
 
