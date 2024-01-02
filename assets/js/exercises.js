@@ -44,7 +44,7 @@ function filteredDataResponse(data, equipment) {
   }
 
   while (returnedExercisesArray.length < 3) {
-    returnedExercisesArray.push(randomElement(backUpExercises))
+    returnedExercisesArray.push(randomElement(backUpExercises));
   }
 
   // Before we reduce the array to 3 items we need to randomise it so the user can get different exercises if they generate a new workout.
