@@ -107,7 +107,8 @@ p {
 }
 
 .weather-widget,
-.modal-button-section {
+.modal-button-section,
+.pastWorkoutCards {
   background: linear-gradient(to top, white 0%, #8acdea 100%);
 }
 
@@ -124,9 +125,9 @@ p {
   border-radius: 10px;
 }
 
-/* past workout cards */
+/* past workout cards styles */
 .pastWorkoutCards {
-  max-height: fit-content;
+  height: 10rem;
 }
 
 .pastExerciseTitles {

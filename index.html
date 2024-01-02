@@ -436,15 +436,18 @@
   </button>
 </div>
 
-    <section class="past-workout-section " id="past-workout">
+<!-- separating custom workout from past workout section -->
+<hr>
+
+    <section class="past-workout-section mt-4" id="past-workout">
       <h2 class=" text-center">Past Workout</h2>
 
       <p class="text-center"><i>Once you have generated a workout more than once, the latest workout set you generated will be shown below. You can see each exercise's instructions by clicking on 'Show Exercise'.</i></p>
       <div class="container-fluid">
         <div class="row justify-content-center text-center">
 
-          <div class="col-sm-3 pastWorkoutCards">
-            <div class="card exercise-card">
+          <div class="col-sm-3">
+            <div class="card exercise-card pastWorkoutCards">
               <div class="card-body">
                 <h5 id="pastTitleOne" class="card-title pastExerciseTitles">Your Past Exercise Will Show Here</h5>
                 <a id="pastOne" class="btn">Show Exercise</a>
@@ -452,8 +455,8 @@
             </div>
           </div>
 
-          <div class="col-sm-3 pastWorkoutCards">
-            <div class="card exercise-card">
+          <div class="col-sm-3">
+            <div class="card exercise-card pastWorkoutCards">
               <div class="card-body">
                 <h5 id="pastTitleTwo" class="card-title pastExerciseTitles">Your Past Exercise Will Show Here</h5>
                 <a id="pastTwo" class="btn">Show Exercise</a>
@@ -461,8 +464,8 @@
             </div>
           </div>
 
-          <div class="col-sm-3 pastWorkoutCards">
-            <div class="card exercise-card">
+          <div class="col-sm-3">
+            <div class="card exercise-card pastWorkoutCards">
               <div class="card-body">
                 <h5 id="pastTitleThree" class="card-title pastExerciseTitles">Your Past Exercise Will Show Here</h5>
                 <a id="pastThree" class="btn">Show Exercise</a>
@@ -472,7 +475,7 @@
         </div>
       </div>
 <!-- Section similar to exercise slider to display exercise when past exercise div is clicked, hidden otherwise; exercise titles are <h3>-->
-      <div id="pastExerciseSlider" class="card col-12 hidden">
+      <div id="pastExerciseSlider" class="card col-12 hidden mt-4">
       <div class="container-fluid  justify-content-center">
         <div class="row justify-content-center">
           <div class="col-sm-5 exercise-instructions">
