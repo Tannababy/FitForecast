@@ -16,6 +16,14 @@ N/A
 
 ![Demo of FitForecast web application](./assets/images/demoGif.gif)
 
+When the user loads the page, they can see the weather based on their browser location, or input their own location manually. Based on the level of precipitation at the time, the 'Generate Workout' modal window will show the options for either an indoor workout (for precipitation over 25%), or an outdoor workout (for precipitation under 25%).
+
+For indoor workouts, the user is prompted to pick the muscle group they wish to work on, along with one piece of equipment they have available. Then, a workout set of three exercises will appear based on the selected options.
+
+For outdoor workouts, the user is prompted to pick between running, walking, cycling, and wheelchair racing, toghether with a specific length of time for the full workout. Then, a workout set of three exercises will appear based on the selected options.
+
+In the Past Workouts section, users can see the last workout set that was generated, and see each exercise individually by clicking on 'Show exercise'.
+
 ## Credits
 
 Overall instruction and provision of necessary materials for this project from the EdX Front-End Web Development Bootcamp instructor and teaching assistants (Oct2023 Cohort).
@@ -26,6 +34,7 @@ Additionally, the following resources helped us by providing the necessary tools
 - Fixing Horizontal Scroll Bug with Bootstrap Grid System: https://getbootstrap.com/docs/4.0/layout/grid/
 - Creating gradient backgrounds: https://gradients.shecodes.io/gradients
 - Helping with creative copywriting for the application content: https://chat.openai.com/
+- Fitness Exercises API: https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb
 
 Badges at the bottom of this README file were listed with the help of the following repository: https://github.com/Ileriayo/markdown-badges
 
@@ -33,7 +42,7 @@ Badges at the bottom of this README file were listed with the help of the follow
 
 MIT License
 
-Copyright (c) 2023 - 2024 Ace Coders Team (EdX Front-End Web Development Bootcamp - Oct2023 Cohort)
+Copyright (c) 2023 - 2024 Lotanna Amobi, Alexandra Asanache, Alina-Cristi Osipov and Dean Warring (Ace Coders Team, EdX Front-End Web Development Bootcamp - Oct2023 Cohort)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
