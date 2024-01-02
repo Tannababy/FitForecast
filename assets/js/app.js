@@ -38,9 +38,9 @@ generateWorkoutIndoor.on("click", function () {
       var exerciseImg = exerciseGif[i];
 
       // Add previous exercises to Local Storage
-      savedExerciseTitle.unshift(exerciseTitle);
-      savedExerciseInstructions.unshift(exerciseInstruction);
-      savedExerciseGif.unshift(exerciseImg);
+      savedExerciseTitle.push(exerciseTitle);
+      savedExerciseInstructions.push(exerciseInstruction);
+      savedExerciseGif.push(exerciseImg);
       localStorage.setItem(
         "savedExerciseTitle",
         JSON.stringify(savedExerciseTitle)
