@@ -174,82 +174,83 @@ const outdoorExerciseObjects = [
     ],
   ],
   [
-    "Wheelchair Racing", [
-    {
-      name: "Easy Pace",
-      instructions: [
-        "Take it easy, no nead to break a sweat",
-        "Just take gentle, maintain a steady pace",
-        "Continue for you selected time"
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      name: "Starts",
-      instructions: [
-        "Begin stationary, wheel straight",
-        "On go, give 10 very rapid short pushes",
-        "Continue for ten full, long pushes",
-        "Return to the start or if on rollers, allow the wheels to stop",
-        "Repeat. Aim to do a minimum of 5 starts"
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      name: "Fartlek",
-      instructions: [
-        "Warm Up with an easy 1k",
-        "Go 200m maximum effort",
-        "Recover with gentle roll for 200m",
-        "Repeat for as many repetitions as you are aiming for"
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      name: "Pyramid",
-      instructions: [
-        "Today is Sprints that increase in length, then when you're exhausted they begin to decrease",
-        "Push hard for 200 metres, gentle roll for 200 metres",
-        "Repeat for 300m hard, 200m recovery, then 400m hard 200m, Then 500m hard, 200m Recovery",
-        "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
-        "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      name: "Rollers",
-      instructions: [
-        "Roller specific workout can be done with or without added weights",
-        "If using weights aim for 3kg on each roller",
-        "Push hard for 500m, aim to have enough pace that you can stop for ten 10 seconds without the wheels losing all momentum",
-        "For 200m keep pushing just enough to maintain momentum",
-        "Repeat, looking for a minimum of 3k total distance"
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      name: "Steering",
-      instructions: [
-        "This is all about pace around corners",
-        "Take it easy on the straights, use both hands but easy pace",
-        "On the corners, use compensator and steer with one hand only, using the other to keep pushing",
-        "Recover again on the straights",
-        "Important to change direction periodically to ensure both arms get similar workout"
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      name: "Alternating hands",
-      instructions: [
-        "Start with a gentle 1k warm up",
-        "Push hard for 100m, but using only 1 arm to push",
-        "Switch to other arm for the next 100m",
-        "100m recivery using both arms, just enough push to maintain momentum",
-        "Repeat for as many repetitions as you are aiming for",
-      ],
-      gifUrl: "./assets/images/wheelchair.gif"
-    },
-  ]
+    "Wheelchair Racing",
+    [
+      {
+        name: "Easy Pace",
+        instructions: [
+          "Take it easy, no nead to break a sweat",
+          "Just take gentle, maintain a steady pace",
+          "Continue for you selected time"
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+      {
+        name: "Starts",
+        instructions: [
+          "Begin stationary, wheel straight",
+          "On go, give 10 very rapid short pushes",
+          "Continue for ten full, long pushes",
+          "Return to the start or if on rollers, allow the wheels to stop",
+          "Repeat. Aim to do a minimum of 5 starts"
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+      {
+        name: "Fartlek",
+        instructions: [
+          "Warm Up with an easy 1k",
+          "Go 200m maximum effort",
+          "Recover with gentle roll for 200m",
+          "Repeat for as many repetitions as you are aiming for"
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+      {
+        name: "Pyramid",
+        instructions: [
+          "Today is Sprints that increase in length, then when you're exhausted they begin to decrease",
+          "Push hard for 200 metres, gentle roll for 200 metres",
+          "Repeat for 300m hard, 200m recovery, then 400m hard 200m, Then 500m hard, 200m Recovery",
+          "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
+          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+      {
+        name: "Rollers",
+        instructions: [
+          "Roller specific workout can be done with or without added weights",
+          "If using weights aim for 3kg on each roller",
+          "Push hard for 500m, aim to have enough pace that you can stop for ten 10 seconds without the wheels losing all momentum",
+          "For 200m keep pushing just enough to maintain momentum",
+          "Repeat, looking for a minimum of 3k total distance"
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+      {
+        name: "Steering",
+        instructions: [
+          "This is all about pace around corners",
+          "Take it easy on the straights, use both hands but easy pace",
+          "On the corners, use compensator and steer with one hand only, using the other to keep pushing",
+          "Recover again on the straights",
+          "Important to change direction periodically to ensure both arms get similar workout"
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+      {
+        name: "Alternating hands",
+        instructions: [
+          "Start with a gentle 1k warm up",
+          "Push hard for 100m, but using only 1 arm to push",
+          "Switch to other arm for the next 100m",
+          "100m recivery using both arms, just enough push to maintain momentum",
+          "Repeat for as many repetitions as you are aiming for",
+        ],
+        gifUrl: "./assets/images/wheelchair.gif"
+      },
+    ]
   ],
 ];
 
