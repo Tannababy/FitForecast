@@ -74,12 +74,8 @@ generateWorkoutIndoor.on("click", function () {
 // Call the getExercise function passing in two variables.
 // The first variable should contain a string matching one of the bodyPart options
 // The second variable should contain a string matching one of the equipment options
-let bodyPart = "cardio"; // This needs to be set to body part user input
-let equipment = "body weight"; // This needs to be set to available equipment user input
-
-// getExercises(bodyPart, equipment);
-// console.log(exerciseName);
-// console.log(exerciseGif);
-// console.log(exerciseInstructions);
+//let bodyPart = "upper arms"; // This needs to be set to body part user input
+//let equipment = "dumbbells"; // This needs to be set to available equipment user input
+//getExercises(bodyPart, equipment);
 
 //8. Once exercise is displayed (getExercise), store data to array of objects in local storage

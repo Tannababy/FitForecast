@@ -1,13 +1,150 @@
 // Create or Get Object Array of Stretches
 
 // Create Object Array Of Running - Cycling & Walking Exercises
+const outdoorExerciseObjects = [
+  [
+    "Running",
+    [
+      {
+        Name: "Easy Pace",
+        Instructions: [
+          "Run at a gentle pace for your selected time",
+          "Try to maintain a pace that feels comfortable and doesn't leave you breathing heavy",
+          "If you begin to feel out of breath, try to slow your run while avoiding walking",
+          "Focus on running for the selected time, not pace"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      {
+        Name: "Race Pace",
+        Instructions: [
+          "This is the run you train for",
+          "You are aiming for maximum pace, Give it everything you've got for your selected time",
+          "This is a max effort run, aim for PB, when you feel tired, push forward",
+          "If running more than 30 minutes remember to hydrate at 30 minute intervals"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      {
+        Name: "The Pyramid",
+        Instructions: [
+          "Today is Sprints that increase in length, then when you're exhausted they begin to decrease",
+          "Sprint for 200 metres, walk or recovery run for 200 metres",
+          "Repeat for 300m Run, 200m recovery, then 400m Run 200m, Then 500m Run, 200m Recovery",
+          "You've reached the top of of the Pyramid, now down to 400m run, 200m recovery, then repeat the steps for 300m then 200m",
+          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      {
+        Name: "Jeffing",
+        Instructions: [
+          "Jeffing of the process of breaking your runs into shorter runs with walks in between",
+          "Start by running until you begin to feel tired but are not completely out of breath",
+          "Walk for 130 seconds, this should be long enough to recover your breathing pattern and lower your heart rate",
+          "Repeat the second step, don't be put of if you run a shorter distance, that is to be expected",
+          "Continue repeating these steps for your selected time"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      ,
+      {
+        Name: "Hills",
+        Instructions: [
+          "Time for some hill train to really strengthen those leg muscles",
+          "Find your nearest, short but steep hill",
+          "Run up the hill giving it maximum effort",
+          "Gentle jog back down, allow gravity to do the work here while you recover",
+          "Repeat for as many reps as you are aiming for"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      {
+        Name: "The Long Run",
+        Instructions: [
+          "This is all about distance",
+          "Find a comfortable, but fast past, you will maintain this throughout with any recovery",
+          "Goal is to cover as much distance in the time you have"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      {
+        Name: "Sprints",
+        Instructions: [
+          "For this you will want a short (500m), flat, stretch of road",
+          "Have a gentle jog to warm up the muscles",
+          "Sprint for 200m, 100% effort as fast as your legs will go",
+          "Walk to recover, let your breathing stabilise",
+          "Repeat for as many reps as you are aiming for"
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      },
+      {
+        Name: "Heart Rate Run",
+        Instructions: [
+          "For this run you will let your heart rate dictate your effort",
+          "Run and getyour heart rate to around 110-120bpm",
+          "Maintain this for alloted time",
+          "If heart rate goes higher, ease off, if it drops below 110 push harder",
+        ],
+        GifUrl: "./images/06851301-Run_Cardio-FIX_360.gif",
+      }
+    ],
+  ],
+  ["Walking", 
+    [
+      {
+        Name: "Step Goal",
+        Instructions: [
+          "A gentle walk aiming for just a step goal",
+          "Try to get around 5,000 steps",
+        ],
+        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+      },
+      {
+        Name: "Brisk Walk",
+        Instructions: [
+          "Here you are looking at getting your heart rate up",
+          "Walk at a steady, but fast pace",
+          "You should be looking at getting slightly out of breath",
+          "Maintain for your selected time"
+        ],
+        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+      }
+    ],
+  ],
+  ["Cycling", [
+      {
+        Name: "Gentle Bike Ride",
+        Instructions: [
+          "Take it easy, no nead to break a sweat",
+          "Just take gentle, maintain a steady pace",
+          "Continue for you selected time"
+        ],
+        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+      },
+    ]
+  ],
+  ["Wheelchair Racing", [
+    {
+      Name: "Easy Pace",
+      Instructions: [
+        "Take it easy, no nead to break a sweat",
+        "Just take gentle, maintain a steady pace",
+        "Continue for you selected time"
+      ],
+      GifUrl: "./images/wheelchair.gif"
+    },
+    ]
+  ],
+];
 
 // 29 Back Up exercises to be used if API fails - !! All Cardio with No-Equipment Needed
 const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/zS2GvLMx5pheZl",
+    gifUrl: "https://v2.exercisedb.io/image/j5PUQKWFVqduLa",
     id: "3220",
     name: "astride jumps (male)",
     target: "cardiovascular system",
@@ -24,7 +161,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/AB90sV47L4iZDt",
+    gifUrl: "https://v2.exercisedb.io/image/LPNw-d7OOyJH8b",
     id: "3672",
     name: "back and forth step",
     target: "cardiovascular system",
@@ -41,7 +178,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/xE7icurqsaK9X8",
+    gifUrl: "https://v2.exercisedb.io/image/9wF6TC0fZ2m6wB",
     id: "3360",
     name: "bear crawl",
     target: "cardiovascular system",
@@ -58,7 +195,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/aoBKEYBsfBqED0",
+    gifUrl: "https://v2.exercisedb.io/image/tqjJ99DkdS9Xvp",
     id: "1160",
     name: "burpee",
     target: "cardiovascular system",
@@ -82,7 +219,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "leverage machine",
-    gifUrl: "https://v2.exercisedb.io/image/IeoavNfQ41Ipwm",
+    gifUrl: "https://v2.exercisedb.io/image/IVU1HNParOA8Dd",
     id: "2331",
     name: "cycle cross trainer",
     target: "cardiovascular system",
@@ -98,7 +235,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "dumbbell",
-    gifUrl: "https://v2.exercisedb.io/image/gWFqnk0pdQbLfi",
+    gifUrl: "https://v2.exercisedb.io/image/rmh1lxAHLImDSH",
     id: "1201",
     name: "dumbbell burpee",
     target: "cardiovascular system",
@@ -124,7 +261,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/9wUwrYn7ZxBSIg",
+    gifUrl: "https://v2.exercisedb.io/image/lJmVWzHqm7i13o",
     id: "3221",
     name: "half knee bends (male)",
     target: "cardiovascular system",
@@ -140,7 +277,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/r50xS5HDR7SpKJ",
+    gifUrl: "https://v2.exercisedb.io/image/OyAjmnLK8BeMzm",
     id: "3636",
     name: "high knee against wall",
     target: "cardiovascular system",
@@ -158,7 +295,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/6moIMXi8p4L4uI",
+    gifUrl: "https://v2.exercisedb.io/image/rI5DYVa5kA5VtR",
     id: "0501",
     name: "jack burpee",
     target: "cardiovascular system",
@@ -183,7 +320,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/UMAhD5PCu05XIx",
+    gifUrl: "https://v2.exercisedb.io/image/URLmgvhhEixsqA",
     id: "3224",
     name: "jack jump (male)",
     target: "cardiovascular system",
@@ -198,7 +335,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "rope",
-    gifUrl: "https://v2.exercisedb.io/image/6EhmrAnLqsZMJi",
+    gifUrl: "https://v2.exercisedb.io/image/oMQeSdh5yHs0FV",
     id: "2612",
     name: "jump rope",
     target: "cardiovascular system",
@@ -214,7 +351,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/3nnNIdX1cHYgFl",
+    gifUrl: "https://v2.exercisedb.io/image/oK1zMb5minjHzS",
     id: "0630",
     name: "mountain climber",
     target: "cardiovascular system",
@@ -230,7 +367,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/F1d4X15hM21Buk",
+    gifUrl: "https://v2.exercisedb.io/image/yA4yW-qmgQdDgm",
     id: "3638",
     name: "push to run",
     target: "cardiovascular system",
@@ -247,7 +384,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/Nq8gVTBxhOLl3m",
+    gifUrl: "https://v2.exercisedb.io/image/7oqFyZ9HNMCa0k",
     id: "0685",
     name: "run",
     target: "cardiovascular system",
@@ -263,7 +400,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/FMRZ4LtrksizwX",
+    gifUrl: "https://v2.exercisedb.io/image/t7-3ljqBQHfqdM",
     id: "0684",
     name: "run (equipment)",
     target: "cardiovascular system",
@@ -279,7 +416,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/AttqIN7GRzmMNa",
+    gifUrl: "https://v2.exercisedb.io/image/lnIeYdHUJ2UPQZ",
     id: "3219",
     name: "scissor jumps (male)",
     target: "cardiovascular system",
@@ -295,7 +432,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/pQvJTqp4tuYAbU",
+    gifUrl: "https://v2.exercisedb.io/image/Ky5bHeUOHowOXe",
     id: "3222",
     name: "semi squat jump (male)",
     target: "cardiovascular system",
@@ -311,7 +448,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/Ix9zhOpks5EIM2",
+    gifUrl: "https://v2.exercisedb.io/image/uRXfanc2cTVc9E",
     id: "3656",
     name: "short stride run",
     target: "cardiovascular system",
@@ -327,7 +464,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/mzl-QWrLzkuseT",
+    gifUrl: "https://v2.exercisedb.io/image/XR4z45IpKRhHc7",
     id: "3361",
     name: "skater hops",
     target: "cardiovascular system",
@@ -345,7 +482,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/BiwBAxuw88TCd8",
+    gifUrl: "https://v2.exercisedb.io/image/XcrCD6GyXnK7ff",
     id: "3671",
     name: "ski step",
     target: "cardiovascular system",
@@ -362,7 +499,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/NqyFEEbUGNdpSe",
+    gifUrl: "https://v2.exercisedb.io/image/j2Q82jjziRJZkU",
     id: "3223",
     name: "star jump (male)",
     target: "cardiovascular system",
@@ -378,7 +515,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "stationary bike",
-    gifUrl: "https://v2.exercisedb.io/image/ZrnvOxcxV7EHAl",
+    gifUrl: "https://v2.exercisedb.io/image/S0rma2qOsaRm9u",
     id: "2138",
     name: "stationary bike run v. 3",
     target: "cardiovascular system",
@@ -397,7 +534,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "leverage machine",
-    gifUrl: "https://v2.exercisedb.io/image/Wt-5Y5IYE4Ijmd",
+    gifUrl: "https://v2.exercisedb.io/image/aRCsmxwzeGJ2Us",
     id: "0798",
     name: "stationary bike walk",
     target: "cardiovascular system",
@@ -415,7 +552,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/kKMYgnGpFEefbR",
+    gifUrl: "https://v2.exercisedb.io/image/BAxajcqoKUZhVe",
     id: "3318",
     name: "swing 360",
     target: "cardiovascular system",
@@ -431,7 +568,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "elliptical machine",
-    gifUrl: "https://v2.exercisedb.io/image/aysaIJzWyMYO0V",
+    gifUrl: "https://v2.exercisedb.io/image/RKk4ljJzj2T4fz",
     id: "2141",
     name: "walk elliptical cross trainer",
     target: "cardiovascular system",
@@ -449,7 +586,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/kS4tf6KYL2c38K",
+    gifUrl: "https://v2.exercisedb.io/image/kuAa6aVNKgm3EN",
     id: "3655",
     name: "walking high knees lunge",
     target: "cardiovascular system",
@@ -467,7 +604,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "leverage machine",
-    gifUrl: "https://v2.exercisedb.io/image/sUnCyJi5W8Owxf",
+    gifUrl: "https://v2.exercisedb.io/image/wJe4K2k3vwM9oS",
     id: "3666",
     name: "walking on incline treadmill",
     target: "cardiovascular system",
@@ -484,7 +621,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "stepmill machine",
-    gifUrl: "https://v2.exercisedb.io/image/j2bG1YufbiLtoE",
+    gifUrl: "https://v2.exercisedb.io/image/xvoUId9OIH49oJ",
     id: "2311",
     name: "walking on stepmill",
     target: "cardiovascular system",
@@ -502,7 +639,7 @@ const backUpExercises = [
   {
     bodyPart: "cardio",
     equipment: "body weight",
-    gifUrl: "https://v2.exercisedb.io/image/yuhdTrKZrQ6Xgz",
+    gifUrl: "https://v2.exercisedb.io/image/sXEJGCDJ6xl60E",
     id: "3637",
     name: "wheel run",
     target: "cardiovascular system",
