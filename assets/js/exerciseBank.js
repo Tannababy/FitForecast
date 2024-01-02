@@ -1,4 +1,4 @@
-// Create Object Array Of Running - Cycling & Walking Exercises
+// Object Array Of Running - Cycling & Walking Exercises
 const outdoorExerciseObjects = [
   [
     "Running",
@@ -9,7 +9,7 @@ const outdoorExerciseObjects = [
           "Run at a gentle pace for your selected time",
           "Try to maintain a pace that feels comfortable and doesn't leave you breathing heavy",
           "If you begin to feel out of breath, try to slow your run while avoiding walking",
-          "Focus on running for the selected time, not pace"
+          "Focus on running for the selected time, not pace",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -19,7 +19,7 @@ const outdoorExerciseObjects = [
           "This is the run you train for",
           "You are aiming for maximum pace, Give it everything you've got for your selected time",
           "This is a max effort run, aim for PB, when you feel tired, push forward",
-          "If running more than 30 minutes remember to hydrate at 30 minute intervals"
+          "If running more than 30 minutes remember to hydrate at 30 minute intervals",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -30,7 +30,7 @@ const outdoorExerciseObjects = [
           "Sprint for 200 metres, walk or recovery run for 200 metres",
           "Repeat for 300m Run, 200m recovery, then 400m Run 200m, Then 500m Run, 200m Recovery",
           "You've reached the top of of the Pyramid, now down to 400m run, 200m recovery, then repeat the steps for 300m then 200m",
-          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
+          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -41,7 +41,7 @@ const outdoorExerciseObjects = [
           "Start by running until you begin to feel tired but are not completely out of breath",
           "Walk for 130 seconds, this should be long enough to recover your breathing pattern and lower your heart rate",
           "Repeat the second step, don't be put of if you run a shorter distance, that is to be expected",
-          "Continue repeating these steps for your selected time"
+          "Continue repeating these steps for your selected time",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -53,7 +53,7 @@ const outdoorExerciseObjects = [
           "Find your nearest, short but steep hill",
           "Run up the hill giving it maximum effort",
           "Gentle jog back down, allow gravity to do the work here while you recover",
-          "Repeat for as many reps as you are aiming for"
+          "Repeat for as many reps as you are aiming for",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -62,7 +62,7 @@ const outdoorExerciseObjects = [
         Instructions: [
           "This is all about distance",
           "Find a comfortable, but fast past, you will maintain this throughout with any recovery",
-          "Goal is to cover as much distance in the time you have"
+          "Goal is to cover as much distance in the time you have",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -73,7 +73,7 @@ const outdoorExerciseObjects = [
           "Have a gentle jog to warm up the muscles",
           "Sprint for 200m, 100% effort as fast as your legs will go",
           "Walk to recover, let your breathing stabilise",
-          "Repeat for as many reps as you are aiming for"
+          "Repeat for as many reps as you are aiming for",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
       },
@@ -86,10 +86,11 @@ const outdoorExerciseObjects = [
           "If heart rate goes higher, ease off, if it drops below 110 push harder",
         ],
         GifUrl: "./assets/images/06851301-Run_Cardio-FIX_360.gif",
-      }
+      },
     ],
   ],
-  ["Walking", 
+  [
+    "Walking",
     [
       {
         Name: "Step Goal",
@@ -97,7 +98,7 @@ const outdoorExerciseObjects = [
           "A gentle walk aiming for just a step goal",
           "Try to get around 5,000 steps",
         ],
-        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       },
       {
         Name: "Brisk Walk",
@@ -105,39 +106,42 @@ const outdoorExerciseObjects = [
           "Here you are looking at getting your heart rate up",
           "Walk at a steady, but fast pace",
           "You should be looking at getting slightly out of breath",
-          "Maintain for your selected time"
+          "Maintain for your selected time",
         ],
-        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       },
       {
         Name: "Nordick Walk",
         Instructions: [
-          "This action involves a straight armswing, good stride and a roll through the foot", 
-          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
-          "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
+          "This action involves a straight armswing, good stride and a roll through the foot",
+          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.",
+          "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs",
         ],
-        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
       },
       {
         Name: "Hill Walking",
         Instructions: [
-          "Find a Nice Hilly Route", 
-          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
-          "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
+          "Find a Nice Hilly Route",
+          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.",
+          "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs",
         ],
-        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif"
-      }
+        GifUrl: "./assets/images/36561301-Short-Stride-Run_Cardio_360.gif",
+      },
     ],
   ],
-  ["Cycling", [
+  [
+    "Cycling",
+    [
       {
         Name: "Gentle Bike Ride",
         Instructions: [
           "Take it easy, no nead to break a sweat",
           "Just take gentle, maintain a steady pace",
-          "Continue for you selected time"
+          "Continue for you selected time",
         ],
-        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl:
+          "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
       {
         Name: "Hills Ride",
@@ -145,18 +149,20 @@ const outdoorExerciseObjects = [
           "Get up those hills",
           "Focus on remaining seated and using leg power not body weight to power up",
           "Relax On downhills and prepare to go again",
-          "Repeat for as you long as you are able to"
+          "Repeat for as you long as you are able to",
         ],
-        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl:
+          "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
       {
         Name: "Go the Distance",
         Instructions: [
           "Set yourself a distance goal",
           "Look to achieve thatgoal maintaining a consistent pace throughout the ride",
-          "The key here is not to go to quick as it is all about that steady pace"
+          "The key here is not to go to quick as it is all about that steady pace",
         ],
-        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl:
+          "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
       {
         Name: "Short Sprints",
@@ -164,88 +170,91 @@ const outdoorExerciseObjects = [
           "Getting those starts right is important in any race",
           "Start from stationary, push as hard as possible for 500m",
           "Come to a complete stop before repeating",
-          "Repeat for as many repetitions as you are aiming for"
+          "Repeat for as many repetitions as you are aiming for",
         ],
-        GifUrl: "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+        GifUrl:
+          "./assets/images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif",
       },
-    ]
+    ],
   ],
-  ["Wheelchair Racing", [
-    {
-      Name: "Easy Pace",
-      Instructions: [
-        "Take it easy, no nead to break a sweat",
-        "Just take gentle, maintain a steady pace",
-        "Continue for you selected time"
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      Name: "Starts",
-      Instructions: [
-        "Begin stationary, wheel straight",
-        "On go, give 10 very rapid short pushes",
-        "Continue for ten full, long pushes",
-        "Return to the start or if on rollers, allow the wheels to stop",
-        "Repeat. Aim to do a minimum of 5 starts"
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      Name: "Fartlek",
-      Instructions: [
-        "Warm Up with an easy 1k",
-        "Go 200m maximum effort",
-        "Recover with gentle roll for 200m",
-        "Repeat for as many repetitions as you are aiming for"
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      Name: "Pyramid",
-      Instructions: [
-        "Today is Sprints that increase in length, then when you're exhausted they begin to decrease",
-        "Push hard for 200 metres, gentle roll for 200 metres",
-        "Repeat for 300m hard, 200m recovery, then 400m hard 200m, Then 500m hard, 200m Recovery",
-        "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
-        "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      Name: "Rollers",
-      Instructions: [
-        "Roller specific workout can be done with or without added weights",
-        "If using weights aim for 3kg on each roller",
-        "Push hard for 500m, aim to have enough pace that you can stop for ten 10 seconds without the wheels losing all momentum",
-        "For 200m keep pushing just enough to maintain momentum",
-        "Repeat, looking for a minimum of 3k total distance"
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      Name: "Steering",
-      Instructions: [
-        "This is all about pace around corners",
-        "Take it easy on the straights, use both hands but easy pace",
-        "On the corners, use compensator and steer with one hand only, using the other to keep pushing",
-        "Recover again on the straights",
-        "Important to change direction periodically to ensure both arms get similar workout"
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    {
-      Name: "Alternating hands",
-      Instructions: [
-        "Start with a gentle 1k warm up",
-        "Push hard for 100m, but using only 1 arm to push",
-        "Switch to other arm for the next 100m",
-        "100m recivery using both arms, just enough push to maintain momentum",
-        "Repeat for as many repetitions as you are aiming for",
-      ],
-      GifUrl: "./assets/images/wheelchair.gif"
-    },
-    ]
+  [
+    "Wheelchair Racing",
+    [
+      {
+        Name: "Easy Pace",
+        Instructions: [
+          "Take it easy, no nead to break a sweat",
+          "Just take gentle, maintain a steady pace",
+          "Continue for you selected time",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+      {
+        Name: "Starts",
+        Instructions: [
+          "Begin stationary, wheel straight",
+          "On go, give 10 very rapid short pushes",
+          "Continue for ten full, long pushes",
+          "Return to the start or if on rollers, allow the wheels to stop",
+          "Repeat. Aim to do a minimum of 5 starts",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+      {
+        Name: "Fartlek",
+        Instructions: [
+          "Warm Up with an easy 1k",
+          "Go 200m maximum effort",
+          "Recover with gentle roll for 200m",
+          "Repeat for as many repetitions as you are aiming for",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+      {
+        Name: "Pyramid",
+        Instructions: [
+          "Today is Sprints that increase in length, then when you're exhausted they begin to decrease",
+          "Push hard for 200 metres, gentle roll for 200 metres",
+          "Repeat for 300m hard, 200m recovery, then 400m hard 200m, Then 500m hard, 200m Recovery",
+          "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
+          "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+      {
+        Name: "Rollers",
+        Instructions: [
+          "Roller specific workout can be done with or without added weights",
+          "If using weights aim for 3kg on each roller",
+          "Push hard for 500m, aim to have enough pace that you can stop for ten 10 seconds without the wheels losing all momentum",
+          "For 200m keep pushing just enough to maintain momentum",
+          "Repeat, looking for a minimum of 3k total distance",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+      {
+        Name: "Steering",
+        Instructions: [
+          "This is all about pace around corners",
+          "Take it easy on the straights, use both hands but easy pace",
+          "On the corners, use compensator and steer with one hand only, using the other to keep pushing",
+          "Recover again on the straights",
+          "Important to change direction periodically to ensure both arms get similar workout",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+      {
+        Name: "Alternating hands",
+        Instructions: [
+          "Start with a gentle 1k warm up",
+          "Push hard for 100m, but using only 1 arm to push",
+          "Switch to other arm for the next 100m",
+          "100m recivery using both arms, just enough push to maintain momentum",
+          "Repeat for as many repetitions as you are aiming for",
+        ],
+        GifUrl: "./assets/images/wheelchair.gif",
+      },
+    ],
   ],
 ];
 
