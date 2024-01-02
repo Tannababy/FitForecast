@@ -76,9 +76,9 @@ function getOutdoorExercises(typeOfExercise) {
     if (type == typeOfExercise.toLowerCase()) {
       for (a = 0; a < 3; a++) {
         var oneExercise = randomElement(allExercises);
-        exerciseName.push(oneExercise.name);
-        exerciseGif.push(oneExercise.gifUrl);
-        exerciseInstructions.push(oneExercise.instructions);
+        exerciseName.push(oneExercise.Name);
+        exerciseGif.push(oneExercise.GifUrl);
+        exerciseInstructions.push(oneExercise.Instructions);
       }
     }
   }
