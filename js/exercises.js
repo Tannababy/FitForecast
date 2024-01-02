@@ -9,7 +9,7 @@ let exerciseInstructions = [];
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'd592bd071bmsh0f69b85e08df678p1ff500jsn2bf527f623c7',
+		'X-RapidAPI-Key': 'e5fb04e46cmsh7eff4095bdba1d2p1eed4bjsn3f37861064db',
 		'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
 	}
 };

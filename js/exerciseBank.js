@@ -110,10 +110,56 @@ const outdoorExerciseObjects = [
           "Maintain for your selected time"
         ],
         GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+      },
+      {
+        Name: "Nordick Walk",
+        Instructions: [
+          "This action involves a straight armswing, good stride and a roll through the foot", 
+          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
+          "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
+        ],
+        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
+      },
+      {
+        Name: "Hill Walking",
+        Instructions: [
+          "Find a Nice Hilly Route", 
+          "This in turn engages 90% of the major muscles and shares the load between upper and lower body.", 
+          "Every step you take becomes a full body exercise which includes the core and of course your heart and lungs"
+        ],
+        GifUrl: "./images/36561301-Short-Stride-Run_Cardio_360.gif"
       }
     ],
   ],
   ["Cycling", [
+      {
+        Name: "Gentle Bike Ride",
+        Instructions: [
+          "Take it easy, no nead to break a sweat",
+          "Just take gentle, maintain a steady pace",
+          "Continue for you selected time"
+        ],
+        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+      },
+      {
+        Name: "Hills Ride",
+        Instructions: [
+          "Get up those hills",
+          "Focus on remaining seated and using leg power not body weight to power up",
+          "Relax On downhills and prepare to go again",
+          "Repeat for as you long as you are able to"
+        ],
+        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+      },
+      {
+        Name: "Gentle Bike Ride",
+        Instructions: [
+          "Take it easy, no nead to break a sweat",
+          "Just take gentle, maintain a steady pace",
+          "Continue for you selected time"
+        ],
+        GifUrl: "./images/52141301-Riding-Outdoor-Bicycle_Cardio_360.gif"
+      },
       {
         Name: "Gentle Bike Ride",
         Instructions: [
@@ -132,6 +178,38 @@ const outdoorExerciseObjects = [
         "Take it easy, no nead to break a sweat",
         "Just take gentle, maintain a steady pace",
         "Continue for you selected time"
+      ],
+      GifUrl: "./images/wheelchair.gif"
+    },
+    {
+      Name: "Starts",
+      Instructions: [
+        "Begin stationary, wheel straight",
+        "On go, give 10 very rapid short pushes",
+        "Continue for ten full, long pushes",
+        "Return to the start or if on rollers, allow the wheels to stop",
+        "Repeat. Aim to do a minimum of 5 starts"
+      ],
+      GifUrl: "./images/wheelchair.gif"
+    },
+    {
+      Name: "Fartlek",
+      Instructions: [
+        "Warm Up with an easy 1k",
+        "Go 200m maximum effort",
+        "Recover with gentle roll for 200m",
+        "Repeat for as many repetitions as you are aiming for"
+      ],
+      GifUrl: "./images/wheelchair.gif"
+    },
+    {
+      Name: "Pyramid",
+      Instructions: [
+        "Today is Sprints that increase in length, then when you're exhausted they begin to decrease",
+        "Push hard for 200 metres, gentle roll for 200 metres",
+        "Repeat for 300m hard, 200m recovery, then 400m hard 200m, Then 500m hard, 200m Recovery",
+        "You've reached the top of of the Pyramid, now down to 400m hard, 200m recovery, then repeat the steps for 300m then 200m",
+        "That was a demanding workout, remember to stretch and hydrate, and pat yourself on the back"
       ],
       GifUrl: "./images/wheelchair.gif"
     },
