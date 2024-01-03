@@ -10,9 +10,15 @@ const options = {
   method: "GET",
   headers: {
     "X-RapidAPI-Key": "e5fb04e46cmsh7eff4095bdba1d2p1eed4bjsn3f37861064db",
-    "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
-  },
+    "X-RapidAPI-Host": "exercisedb.p.rapidapi.com"
+  }
 };
+
+function randomElement(arr) {
+  const length = arr.length;
+  const randomNumber = Math.floor(Math.random() * length)
+  return arr[randomNumber]
+}
 
 async function getExercises(bodyPart, equipment) {
   let queryURL = url + bodyPart + limit;
@@ -38,8 +44,7 @@ function filteredDataResponse(data, equipment) {
   }
 
   while (returnedExercisesArray.length < 3) {
-    let i = Math.floor(Math.random() * 29);
-    returnedExercisesArray.push(backUpExercises[i]);
+    returnedExercisesArray.push(randomElement(backUpExercises));
   }
 
   // Before we reduce the array to 3 items we need to randomise it so the user can get different exercises if they generate a new workout.
@@ -63,25 +68,37 @@ function filteredDataResponse(data, equipment) {
   }
 }
 
-// Parameters for ExerciseDB API
-/*  'equipment'
-            barbell,
-            body weight, = No Equipment
-            cable,
-            dumbbell,
-            kettlebell,
-            resistance band,
-            weighted,
 
-    'bodyPart'
-            back,
-            cardio,
-            chest,
-            lower arms,
-            lower legs,
-            neck,
-            shoulders,
-            upper arms,
-            upper legs,
-            waist        
-*/
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+function getOutdoorExercises(typeOfExercise) {
+  for (i = 0; i < outdoorExerciseObjects.length; i++) {
+    var exerciseGroup = outdoorExerciseObjects[i];
+    var type = exerciseGroup[0].trim().toLowerCase();
+    var allExercises = exerciseGroup[1];
+    if (type == typeOfExercise.toLowerCase()) {
+      for (a = 0; a < 3; a++) {
+        var oneExercise = randomElement(allExercises);
+        exerciseName.push(oneExercise.Name);
+        exerciseGif.push(oneExercise.GifUrl);
+        exerciseInstructions.push(oneExercise.Instructions);
+      }
+    }
+  }
+}

@@ -178,7 +178,7 @@ const outdoorExerciseObjects = [
     ],
   ],
   [
-    "Wheelchair Racing",
+    "Wheelchair",
     [
       {
         Name: "Easy Pace",

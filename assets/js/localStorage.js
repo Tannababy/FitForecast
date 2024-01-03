@@ -13,8 +13,8 @@ let savedExerciseGif = localStorage.getItem("savedExerciseGif")
   ? JSON.parse(localStorage.getItem("savedExerciseGif"))
   : [];
 
-// Store maximum 6 exercises in local storage
-while (savedExerciseTitle.length > 6) {
+// Store maximum 3 exercises in local storage
+while (savedExerciseTitle.length > 3) {
   savedExerciseTitle.shift();
   savedExerciseInstructions.shift();
   savedExerciseGif.shift();
@@ -36,9 +36,15 @@ const pastTitleOne = $("#pastTitleOne");
 const pastTitleTwo = $("#pastTitleTwo");
 const pastTitleThree = $("#pastTitleThree");
 
-pastTitleOne.text(capitalizeFirstLetter(savedExerciseTitle[0]));
-pastTitleTwo.text(capitalizeFirstLetter(savedExerciseTitle[1]));
-pastTitleThree.text(capitalizeFirstLetter(savedExerciseTitle[2]));
+function updateTitles() {
+  if (savedExerciseTitle.length >= 3) {
+    pastTitleOne.text(capitalizeFirstLetter(savedExerciseTitle[0]));
+    pastTitleTwo.text(capitalizeFirstLetter(savedExerciseTitle[1]));
+    pastTitleThree.text(capitalizeFirstLetter(savedExerciseTitle[2]));
+  }
+}
+
+updateTitles();
 
 const buttonOne = $("#pastOne");
 const buttonTwo = $("#pastTwo");
@@ -48,56 +54,68 @@ const pastTitle = $("#pastTitle");
 const pastInstructions = $("#pastInstructions");
 const pastGif = $("#pastGif");
 buttonOne.on("click", function () {
-  pastTitle.text(capitalizeFirstLetter(savedExerciseTitle[0]));
+  const title = savedExerciseTitle[0]
+  if (title != undefined) {
+    pastTitle.text(capitalizeFirstLetter(title));
 
-  pastInstructions.empty();
-  //create a new list with intructions for Button 1
-  for (a = 0; a < savedExerciseInstructions[0].length; a++) {
-    var instruction = savedExerciseInstructions[0][a];
-    var instr = $("<li>");
-    instr.text(instruction);
-    pastInstructions.append(instr);
+    pastInstructions.empty();
+    //create a new list with intructions for Button 1
+    for (a = 0; a < savedExerciseInstructions[0].length; a++) {
+      var instruction = savedExerciseInstructions[0][a];
+      var instr = $("<li>");
+      instr.text(instruction);
+      pastInstructions.append(instr);
+    }
+
+    pastGif.attr("src", savedExerciseGif[0]);
+
+    updateTitles();
+    // show past exercise slider on click
+    pastExerciseSlider.removeClass("hidden");
   }
-
-  pastGif.attr("src", savedExerciseGif[0]);
-
-  // show past exercise slider on click
-  pastExerciseSlider.removeClass("hidden");
 });
 
 buttonTwo.on("click", function () {
-  pastTitle.text(capitalizeFirstLetter(savedExerciseTitle[1]));
+  const title = savedExerciseTitle[1]
+  if (title != undefined) {
+    pastTitle.text(capitalizeFirstLetter(title));
 
-  pastInstructions.empty();
-  //create a new list with intructions Button 2
-  //create a new list with intructions
-  for (a = 0; a < savedExerciseInstructions[1].length; a++) {
-    var instruction = savedExerciseInstructions[1][a];
-    var instr = $("<li>");
-    instr.text(instruction);
-    pastInstructions.append(instr);
+    pastInstructions.empty();
+    //create a new list with intructions Button 2
+    //create a new list with intructions
+    for (a = 0; a < savedExerciseInstructions[1].length; a++) {
+      var instruction = savedExerciseInstructions[1][a];
+      var instr = $("<li>");
+      instr.text(instruction);
+      pastInstructions.append(instr);
+    }
+
+    pastGif.attr("src", savedExerciseGif[1]);
+
+    updateTitles();
+    // show past exercise slider on click
+    pastExerciseSlider.removeClass("hidden");
   }
-
-  pastGif.attr("src", savedExerciseGif[1]);
-
-  // show past exercise slider on click
-  pastExerciseSlider.removeClass("hidden");
 });
 
 buttonThree.on("click", function () {
-  pastTitle.text(capitalizeFirstLetter(savedExerciseTitle[2]));
+  const title = savedExerciseTitle[2]
+  if (title != undefined) {
+    pastTitle.text(capitalizeFirstLetter(title));
 
-  pastInstructions.empty();
-  //create a new list with intructions Button 3
-  for (a = 0; a < savedExerciseInstructions[2].length; a++) {
-    var instruction = savedExerciseInstructions[2][a];
-    var instr = $("<li>");
-    instr.text(instruction);
-    pastInstructions.append(instr);
+    pastInstructions.empty();
+    //create a new list with intructions Button 3
+    for (a = 0; a < savedExerciseInstructions[2].length; a++) {
+      var instruction = savedExerciseInstructions[2][a];
+      var instr = $("<li>");
+      instr.text(instruction);
+      pastInstructions.append(instr);
+    }
+
+    pastGif.attr("src", savedExerciseGif[2]);
+
+    updateTitles();
+    // show past exercise slider on click
+    pastExerciseSlider.removeClass("hidden");
   }
-
-  pastGif.attr("src", savedExerciseGif[2]);
-
-  // show past exercise slider on click
-  pastExerciseSlider.removeClass("hidden");
 });

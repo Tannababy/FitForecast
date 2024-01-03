@@ -14,7 +14,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="images/favicon-fitforecast.png"
+      href="assets/images/favicon-fitforecast.png"
     />
 
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
@@ -110,7 +110,6 @@
                     type="text"
                     id="search-input"
                     placeholder="Add your city manually"
-                    aria-labelledby="form-heading"
                     aria-controls="today forecast"
                   />
                   <div class="input-group-append mt-3">
@@ -293,7 +292,7 @@
                   <!-- options for body part (muscle group) -->
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01"
+                      <label class="input-group-text" for="exerciseChoice"
                         >Type of Exercise</label
                       >
                     </div>
@@ -309,7 +308,7 @@
                   <!-- options for equipment -->
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01"
+                      <label class="input-group-text" for="selectedTime"
                         >Duration</label
                       >
                     </div>
@@ -335,6 +334,7 @@
                   <button 
                   id="generate-workout-outdoor" 
                   type="button" 
+                  data-dismiss="modal"
                   class="btn">Generate Workout</button>
                 </div>
               </div>
@@ -346,7 +346,7 @@
       <!-- Main section -->
     </main>
     <section class="custom-workout-section" id="custom-workout">
-      <h2 class="text-center">Your Custom Workout</h2>
+      <h2 class="text-center" id="your-custom-workout">Your Custom Workout</h2>
       <!-- Boostrap slider to display exercises here ; title of exercise is <h3>-->
         <p id="customWorkoutPlaceholder" class="text-center"><i>Please click on 'Generate Workout' above to display your custom workout here.</i></p>
         <div
