@@ -128,7 +128,8 @@ p {
 /* wheelchair racing gifs sizing */
 #exercise-gif0,
 #exercise-gif1,
-#exercise-gif2 {
+#exercise-gif2,
+#pastGif {
   max-width: 320px;
 }
 
