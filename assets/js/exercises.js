@@ -42,7 +42,7 @@ function filteredDataResponse(data, equipment) {
       returnedExercisesArray.push(data[i]);
     }
   }
-
+  console.log(returnedExercisesArray);
   while (returnedExercisesArray.length < 3) {
     returnedExercisesArray.push(randomElement(backUpExercises));
   }
