@@ -93,7 +93,7 @@ buttonTwo.on("click", function () {
 });
 
 buttonThree.on("click", function () {
-  const title = savedExerciseTitle[0]
+  const title = savedExerciseTitle[2]
   if (title != undefined) {
     pastTitle.text(capitalizeFirstLetter(title));
 
