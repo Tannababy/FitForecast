@@ -125,6 +125,13 @@ p {
   border-radius: 10px;
 }
 
+/* wheelchair racing gifs sizing */
+#exercise-gif0,
+#exercise-gif1,
+#exercise-gif2 {
+  max-width: 320px;
+}
+
 /* past workout cards styles */
 .pastWorkoutCards {
   height: 10rem;
