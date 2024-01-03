@@ -47,9 +47,9 @@ function populateCurrentWorkouts() {
     var exerciseImg = exerciseGif.pop();
 
     // Add previous exercises to Local Storage
-    savedExerciseTitle.unshift(exerciseTitle);
-    savedExerciseInstructions.unshift(exerciseInstruction);
-    savedExerciseGif.unshift(exerciseImg);
+    savedExerciseTitle.push(exerciseTitle);
+    savedExerciseInstructions.push(exerciseInstruction);
+    savedExerciseGif.push(exerciseImg);
     saveInLocalStorage(savedExerciseTitle, savedExerciseInstructions, savedExerciseGif);
 
     //set capitalize title
