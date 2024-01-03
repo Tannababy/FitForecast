@@ -36,11 +36,15 @@ const pastTitleOne = $("#pastTitleOne");
 const pastTitleTwo = $("#pastTitleTwo");
 const pastTitleThree = $("#pastTitleThree");
 
-if (savedExerciseTitle.length >= 3) {
-  pastTitleOne.text(capitalizeFirstLetter(savedExerciseTitle[0]));
-  pastTitleTwo.text(capitalizeFirstLetter(savedExerciseTitle[1]));
-  pastTitleThree.text(capitalizeFirstLetter(savedExerciseTitle[2]));
+function updateTitles() {
+  if (savedExerciseTitle.length >= 3) {
+    pastTitleOne.text(capitalizeFirstLetter(savedExerciseTitle[0]));
+    pastTitleTwo.text(capitalizeFirstLetter(savedExerciseTitle[1]));
+    pastTitleThree.text(capitalizeFirstLetter(savedExerciseTitle[2]));
+  }
 }
+
+updateTitles();
 
 const buttonOne = $("#pastOne");
 const buttonTwo = $("#pastTwo");
@@ -65,6 +69,7 @@ buttonOne.on("click", function () {
 
     pastGif.attr("src", savedExerciseGif[0]);
 
+    updateTitles();
     // show past exercise slider on click
     pastExerciseSlider.removeClass("hidden");
   }
@@ -87,6 +92,7 @@ buttonTwo.on("click", function () {
 
     pastGif.attr("src", savedExerciseGif[1]);
 
+    updateTitles();
     // show past exercise slider on click
     pastExerciseSlider.removeClass("hidden");
   }
@@ -108,6 +114,7 @@ buttonThree.on("click", function () {
 
     pastGif.attr("src", savedExerciseGif[2]);
 
+    updateTitles();
     // show past exercise slider on click
     pastExerciseSlider.removeClass("hidden");
   }
