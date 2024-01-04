@@ -260,369 +260,447 @@ const outdoorExerciseObjects = [
 
 // 29 Back Up exercises to be used if API fails - !! All Cardio with No-Equipment Needed
 const backUpExercises =
-  [
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/zlJnaja1QsbdVI",
-      id: "3220",
-      name: "astride jumps (male)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Bend your knees and lower your body into a squat position.",
-        "Jump explosively upwards, extending your legs and arms.",
-        "While in the air, spread your legs apart and bring your arms out to the sides.",
-        "Land softly with your feet shoulder-width apart, bending your knees to absorb the impact.",
-        "Repeat for the desired number of repetitions.",
+[
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/d650UrRNMVkHni",
+      "id": "3220",
+      "name": "astride jumps (male)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/qtYCSHaHD-Zciw",
-      id: "3672",
-      name: "back and forth step",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "glutes", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Step forward with your right foot, bending your knee and lowering your body into a lunge position.",
-        "Push off with your right foot and step back to the starting position.",
-        "Repeat the movement with your left foot, alternating legs with each step.",
-        "Continue stepping back and forth, maintaining a steady pace.",
-        "Repeat for the desired duration or number of repetitions.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Bend your knees and lower your body into a squat position.",
+          "Jump explosively upwards, extending your legs and arms.",
+          "While in the air, spread your legs apart and bring your arms out to the sides.",
+          "Land softly with your feet shoulder-width apart, bending your knees to absorb the impact.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/YpiVfmsapfm9PB",
+      "id": "3672",
+      "name": "back and forth step",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "glutes",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/Glch1EyKfPhs4Q",
-      id: "3360",
-      name: "bear crawl",
-      target: "cardiovascular system",
-      secondaryMuscles: ["core", "shoulders", "triceps"],
-      instructions: [
-        "Start on all fours with your hands directly under your shoulders and your knees directly under your hips.",
-        "Lift your knees slightly off the ground, keeping your back flat and your core engaged.",
-        "Move your right hand and left foot forward simultaneously, followed by your left hand and right foot.",
-        "Continue crawling forward, alternating your hand and foot movements.",
-        "Maintain a steady pace and keep your core tight throughout the exercise.",
-        "Continue for the desired distance or time.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Step forward with your right foot, bending your knee and lowering your body into a lunge position.",
+          "Push off with your right foot and step back to the starting position.",
+          "Repeat the movement with your left foot, alternating legs with each step.",
+          "Continue stepping back and forth, maintaining a steady pace.",
+          "Repeat for the desired duration or number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/F9EvclPOaBZh5n",
+      "id": "3360",
+      "name": "bear crawl",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "core",
+          "shoulders",
+          "triceps"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/Q5adBU6aeeS5-y",
-      id: "1160",
-      name: "burpee",
-      target: "cardiovascular system",
-      secondaryMuscles: [
-        "quadriceps",
-        "hamstrings",
-        "calves",
-        "shoulders",
-        "chest",
+      "instructions": [
+          "Start on all fours with your hands directly under your shoulders and your knees directly under your hips.",
+          "Lift your knees slightly off the ground, keeping your back flat and your core engaged.",
+          "Move your right hand and left foot forward simultaneously, followed by your left hand and right foot.",
+          "Continue crawling forward, alternating your hand and foot movements.",
+          "Maintain a steady pace and keep your core tight throughout the exercise.",
+          "Continue for the desired distance or time."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/4h1lteew6g1aCL",
+      "id": "1160",
+      "name": "burpee",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves",
+          "shoulders",
+          "chest"
       ],
-      instructions: [
-        "Start in a standing position with your feet shoulder-width apart.",
-        "Lower your body into a squat position by bending your knees and placing your hands on the floor in front of you.",
-        "Kick your feet back into a push-up position.",
-        "Perform a push-up, keeping your body in a straight line.",
-        "Jump your feet back into the squat position.",
-        "Jump up explosively, reaching your arms overhead.",
-        "Land softly and immediately lower back into a squat position to begin the next repetition.",
+      "instructions": [
+          "Start in a standing position with your feet shoulder-width apart.",
+          "Lower your body into a squat position by bending your knees and placing your hands on the floor in front of you.",
+          "Kick your feet back into a push-up position.",
+          "Perform a push-up, keeping your body in a straight line.",
+          "Jump your feet back into the squat position.",
+          "Jump up explosively, reaching your arms overhead.",
+          "Land softly and immediately lower back into a squat position to begin the next repetition."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/QW8PTs7paOHPgq",
+      "id": "3221",
+      "name": "half knee bends (male)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "glutes"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/c1WoqPJN-wWr6B",
-      id: "3221",
-      name: "half knee bends (male)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "glutes"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Bend your knees and lower your body down as if you were sitting back into a chair.",
-        "Keep your chest up and your weight in your heels.",
-        "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Bend your knees and lower your body down as if you were sitting back into a chair.",
+          "Keep your chest up and your weight in your heels.",
+          "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/KjtDGVqvfBeIAG",
+      "id": "3636",
+      "name": "high knee against wall",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "glutes",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/gMIxIo5xA4VfXQ",
-      id: "3636",
-      name: "high knee against wall",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "glutes", "calves"],
-      instructions: [
-        "Stand facing a wall with your feet hip-width apart.",
-        "Place your hands on the wall for support.",
-        "Engage your core and lift your right knee up towards your chest, while keeping your left foot on the ground.",
-        "Quickly switch legs, bringing your left knee up towards your chest and lowering your right foot back down.",
-        "Continue alternating legs in a running motion, bringing your knees up as high as possible.",
-        "Maintain a fast pace and keep your upper body stable throughout the exercise.",
-        "Repeat for the desired duration or number of repetitions.",
+      "instructions": [
+          "Stand facing a wall with your feet hip-width apart.",
+          "Place your hands on the wall for support.",
+          "Engage your core and lift your right knee up towards your chest, while keeping your left foot on the ground.",
+          "Quickly switch legs, bringing your left knee up towards your chest and lowering your right foot back down.",
+          "Continue alternating legs in a running motion, bringing your knees up as high as possible.",
+          "Maintain a fast pace and keep your upper body stable throughout the exercise.",
+          "Repeat for the desired duration or number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/jgkfHM2bRm3ORK",
+      "id": "0501",
+      "name": "jack burpee",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves",
+          "shoulders",
+          "triceps",
+          "core"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/O5qt80GwB4K6VR",
-      id: "0501",
-      name: "jack burpee",
-      target: "cardiovascular system",
-      secondaryMuscles: [
-        "quadriceps",
-        "hamstrings",
-        "calves",
-        "shoulders",
-        "triceps",
-        "core",
+      "instructions": [
+          "Start in a standing position with your feet shoulder-width apart.",
+          "Lower your body into a squat position, placing your hands on the ground in front of you.",
+          "Kick your feet back, landing in a push-up position.",
+          "Perform a push-up, lowering your chest to the ground and then pushing back up.",
+          "Jump your feet forward, landing in a squat position.",
+          "Jump up explosively, reaching your arms overhead.",
+          "Land softly and immediately lower back into the squat position to begin the next repetition."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/cfJZm-XjzBswSo",
+      "id": "3224",
+      "name": "jack jump (male)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "calves"
       ],
-      instructions: [
-        "Start in a standing position with your feet shoulder-width apart.",
-        "Lower your body into a squat position, placing your hands on the ground in front of you.",
-        "Kick your feet back, landing in a push-up position.",
-        "Perform a push-up, lowering your chest to the ground and then pushing back up.",
-        "Jump your feet forward, landing in a squat position.",
-        "Jump up explosively, reaching your arms overhead.",
-        "Land softly and immediately lower back into the squat position to begin the next repetition.",
+      "instructions": [
+          "Stand with your feet together and your arms by your sides.",
+          "Jump up, spreading your feet apart and raising your arms above your head.",
+          "As you land, quickly jump back to the starting position.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/V4E9f4zc5VVjh4",
+      "id": "0630",
+      "name": "mountain climber",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "core",
+          "shoulders",
+          "triceps"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/kOVqiUJZuRNLAk",
-      id: "3224",
-      name: "jack jump (male)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "calves"],
-      instructions: [
-        "Stand with your feet together and your arms by your sides.",
-        "Jump up, spreading your feet apart and raising your arms above your head.",
-        "As you land, quickly jump back to the starting position.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Start in a high plank position with your hands directly under your shoulders and your body in a straight line.",
+          "Engage your core and bring your right knee towards your chest, then quickly switch and bring your left knee towards your chest.",
+          "Continue alternating legs in a running motion, keeping your hips low and your core engaged.",
+          "Maintain a steady pace and breathe evenly throughout the exercise.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/aIiP5x8qrRlEeF",
+      "id": "3638",
+      "name": "push to run",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/3bnYh6g3OUi57o",
-      id: "0630",
-      name: "mountain climber",
-      target: "cardiovascular system",
-      secondaryMuscles: ["core", "shoulders", "triceps"],
-      instructions: [
-        "Start in a high plank position with your hands directly under your shoulders and your body in a straight line.",
-        "Engage your core and bring your right knee towards your chest, then quickly switch and bring your left knee towards your chest.",
-        "Continue alternating legs in a running motion, keeping your hips low and your core engaged.",
-        "Maintain a steady pace and breathe evenly throughout the exercise.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Start in a push-up position with your hands shoulder-width apart and your body in a straight line.",
+          "Lower your chest towards the ground by bending your elbows, keeping your body straight.",
+          "Push through your hands to extend your arms and return to the starting position.",
+          "Quickly bring one knee towards your chest, then quickly switch and bring the other knee towards your chest.",
+          "Continue alternating knees as fast as you can while maintaining good form.",
+          "Continue for the desired duration or number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/5LnLb72rv9S278",
+      "id": "0685",
+      "name": "run",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/cG51puM5K2MZsS",
-      id: "3638",
-      name: "push to run",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Start in a push-up position with your hands shoulder-width apart and your body in a straight line.",
-        "Lower your chest towards the ground by bending your elbows, keeping your body straight.",
-        "Push through your hands to extend your arms and return to the starting position.",
-        "Quickly bring one knee towards your chest, then quickly switch and bring the other knee towards your chest.",
-        "Continue alternating knees as fast as you can while maintaining good form.",
-        "Continue for the desired duration or number of repetitions.",
+      "instructions": [
+          "Start by standing upright with your feet hip-width apart.",
+          "Engage your core and keep your upper body relaxed.",
+          "Begin jogging in place, lifting your knees up towards your chest and landing softly on the balls of your feet.",
+          "Maintain a steady pace and continue jogging for the desired duration or distance.",
+          "Remember to breathe deeply and maintain good posture throughout the exercise."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/VlRF9WDppwUUhU",
+      "id": "0684",
+      "name": "run (equipment)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/cNMe7le9dfvwZz",
-      id: "0685",
-      name: "run",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Start by standing upright with your feet hip-width apart.",
-        "Engage your core and keep your upper body relaxed.",
-        "Begin jogging in place, lifting your knees up towards your chest and landing softly on the balls of your feet.",
-        "Maintain a steady pace and continue jogging for the desired duration or distance.",
-        "Remember to breathe deeply and maintain good posture throughout the exercise.",
+      "instructions": [
+          "Start by standing upright with your feet hip-width apart.",
+          "Engage your core and keep your upper body relaxed.",
+          "Begin jogging in place, lifting your knees up towards your chest and landing softly on the balls of your feet.",
+          "Maintain a steady pace and continue jogging for the desired duration or distance.",
+          "Remember to breathe deeply and maintain good posture throughout the exercise."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/ixcPH2ElWSEwAq",
+      "id": "3219",
+      "name": "scissor jumps (male)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/3jvYDsGsPU4DY7",
-      id: "0684",
-      name: "run (equipment)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Start by standing upright with your feet hip-width apart.",
-        "Engage your core and keep your upper body relaxed.",
-        "Begin jogging in place, lifting your knees up towards your chest and landing softly on the balls of your feet.",
-        "Maintain a steady pace and continue jogging for the desired duration or distance.",
-        "Remember to breathe deeply and maintain good posture throughout the exercise.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Jump off the ground and simultaneously cross your right leg in front of your left leg.",
+          "As you land, quickly switch legs, crossing your left leg in front of your right leg.",
+          "Continue alternating legs and jumping as quickly as possible.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/AqxS2UGjPPbNF2",
+      "id": "3222",
+      "name": "semi squat jump (male)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/nuQIHDFqS5J4Lg",
-      id: "3219",
-      name: "scissor jumps (male)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Jump off the ground and simultaneously cross your right leg in front of your left leg.",
-        "As you land, quickly switch legs, crossing your left leg in front of your right leg.",
-        "Continue alternating legs and jumping as quickly as possible.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Bend your knees and lower your body into a squat position.",
+          "Jump explosively, extending your hips and knees while swinging your arms for momentum.",
+          "Land softly on the balls of your feet and immediately go into the next repetition.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/1uFzOVp0FOal-9",
+      "id": "3656",
+      "name": "short stride run",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/XCJPusquOHmZ6q",
-      id: "3222",
-      name: "semi squat jump (male)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Bend your knees and lower your body into a squat position.",
-        "Jump explosively, extending your hips and knees while swinging your arms for momentum.",
-        "Land softly on the balls of your feet and immediately go into the next repetition.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Find an open space or a treadmill to perform the exercise.",
+          "Stand tall with your feet hip-width apart.",
+          "Start jogging in place, lifting your knees high and pumping your arms.",
+          "After a few seconds, start taking short strides forward, maintaining a quick pace.",
+          "Continue running with short strides for the desired duration or distance."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/EsXI4ojWRRAKKH",
+      "id": "3361",
+      "name": "skater hops",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "glutes",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/B9SUualqiR4GoR",
-      id: "3656",
-      name: "short stride run",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Find an open space or a treadmill to perform the exercise.",
-        "Stand tall with your feet hip-width apart.",
-        "Start jogging in place, lifting your knees high and pumping your arms.",
-        "After a few seconds, start taking short strides forward, maintaining a quick pace.",
-        "Continue running with short strides for the desired duration or distance.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Bend your knees slightly and jump to the right, landing on your right foot.",
+          "As you land, swing your left leg behind your right leg and tap the ground with your left toes.",
+          "Immediately jump to the left, landing on your left foot.",
+          "As you land, swing your right leg behind your left leg and tap the ground with your right toes.",
+          "Continue alternating sides, jumping and tapping the ground with each leg.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/C-5P4BFQpEaTO-",
+      "id": "3671",
+      "name": "ski step",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "glutes",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/x8K3z5LTlIhyPB",
-      id: "3361",
-      name: "skater hops",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "glutes", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Bend your knees slightly and jump to the right, landing on your right foot.",
-        "As you land, swing your left leg behind your right leg and tap the ground with your left toes.",
-        "Immediately jump to the left, landing on your left foot.",
-        "As you land, swing your right leg behind your left leg and tap the ground with your right toes.",
-        "Continue alternating sides, jumping and tapping the ground with each leg.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart.",
+          "Bend your knees slightly and keep your back straight.",
+          "Jump to the right, landing on your right foot while swinging your left leg behind your right leg.",
+          "Immediately jump to the left, landing on your left foot while swinging your right leg behind your left leg.",
+          "Continue alternating jumps from side to side, mimicking a skiing motion.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/MKTKvx7wXUbU8U",
+      "id": "3223",
+      "name": "star jump (male)",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/6wfoYqtDVMzucK",
-      id: "3671",
-      name: "ski step",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "glutes", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart.",
-        "Bend your knees slightly and keep your back straight.",
-        "Jump to the right, landing on your right foot while swinging your left leg behind your right leg.",
-        "Immediately jump to the left, landing on your left foot while swinging your right leg behind your left leg.",
-        "Continue alternating jumps from side to side, mimicking a skiing motion.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart and your arms by your sides.",
+          "Bend your knees slightly and jump up explosively.",
+          "As you jump, spread your legs and extend your arms out to the sides, forming a star shape with your body.",
+          "Land softly on the balls of your feet with your knees slightly bent.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/pKnhffGKc2hwmT",
+      "id": "3318",
+      "name": "swing 360",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "shoulders",
+          "core"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/-yjjsteFJrAV9y",
-      id: "3223",
-      name: "star jump (male)",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Stand with your feet shoulder-width apart and your arms by your sides.",
-        "Bend your knees slightly and jump up explosively.",
-        "As you jump, spread your legs and extend your arms out to the sides, forming a star shape with your body.",
-        "Land softly on the balls of your feet with your knees slightly bent.",
-        "Repeat for the desired number of repetitions.",
+      "instructions": [
+          "Stand with your feet shoulder-width apart and knees slightly bent.",
+          "Hold your arms straight out in front of you, parallel to the ground.",
+          "Engage your core and swing your arms in a circular motion, rotating your torso as you do so.",
+          "Continue the circular motion, swinging your arms and rotating your torso for the desired number of repetitions.",
+          "Remember to breathe throughout the exercise."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/TAWWXwNB1Yq3u8",
+      "id": "3655",
+      "name": "walking high knees lunge",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "glutes",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/VRI18MtCVPQvG2",
-      id: "3318",
-      name: "swing 360",
-      target: "cardiovascular system",
-      secondaryMuscles: ["shoulders", "core"],
-      instructions: [
-        "Stand with your feet shoulder-width apart and knees slightly bent.",
-        "Hold your arms straight out in front of you, parallel to the ground.",
-        "Engage your core and swing your arms in a circular motion, rotating your torso as you do so.",
-        "Continue the circular motion, swinging your arms and rotating your torso for the desired number of repetitions.",
-        "Remember to breathe throughout the exercise.",
+      "instructions": [
+          "Stand with your feet hip-width apart.",
+          "Lift your right knee up towards your chest as high as you can while balancing on your left leg.",
+          "Step forward with your right foot and lower your body into a lunge position, bending both knees to a 90-degree angle.",
+          "Push off with your right foot and bring your left knee up towards your chest.",
+          "Step forward with your left foot and lower your body into a lunge position.",
+          "Continue alternating legs and lunging forward, keeping your core engaged and maintaining a steady pace.",
+          "Repeat for the desired number of repetitions."
+      ]
+  },
+  {
+      "bodyPart": "cardio",
+      "equipment": "body weight",
+      "gifUrl": "https://v2.exercisedb.io/image/6EVuTNfpWpThGA",
+      "id": "3637",
+      "name": "wheel run",
+      "target": "cardiovascular system",
+      "secondaryMuscles": [
+          "quadriceps",
+          "hamstrings",
+          "calves"
       ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/kvum6f41iRgVSl",
-      id: "3655",
-      name: "walking high knees lunge",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "glutes", "calves"],
-      instructions: [
-        "Stand with your feet hip-width apart.",
-        "Lift your right knee up towards your chest as high as you can while balancing on your left leg.",
-        "Step forward with your right foot and lower your body into a lunge position, bending both knees to a 90-degree angle.",
-        "Push off with your right foot and bring your left knee up towards your chest.",
-        "Step forward with your left foot and lower your body into a lunge position.",
-        "Continue alternating legs and lunging forward, keeping your core engaged and maintaining a steady pace.",
-        "Repeat for the desired number of repetitions.",
-      ],
-    },
-    {
-      bodyPart: "cardio",
-      equipment: "body weight",
-      gifUrl: "https://v2.exercisedb.io/image/fCPgbR-aiiksOe",
-      id: "3637",
-      name: "wheel run",
-      target: "cardiovascular system",
-      secondaryMuscles: ["quadriceps", "hamstrings", "calves"],
-      instructions: [
-        "Start in a plank position with your hands on the wheel and your body straight.",
-        "Engage your core and start rolling the wheel forward by extending your arms.",
-        "Continue rolling until your body is fully extended and your arms are overhead.",
-        "Reverse the movement by pulling the wheel back towards your body, using your core and arms.",
-        "Repeat for the desired number of repetitions.",
-      ],
-    },
-  ];
-  
+      "instructions": [
+          "Start in a plank position with your hands on the wheel and your body straight.",
+          "Engage your core and start rolling the wheel forward by extending your arms.",
+          "Continue rolling until your body is fully extended and your arms are overhead.",
+          "Reverse the movement by pulling the wheel back towards your body, using your core and arms.",
+          "Repeat for the desired number of repetitions."
+      ]
+  }
+]
