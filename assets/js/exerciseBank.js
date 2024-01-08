@@ -264,7 +264,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/d650UrRNMVkHni",
+      "gifUrl": "https://v2.exercisedb.io/image/BHBJvBf7A20DAn",
       "id": "3220",
       "name": "astride jumps (male)",
       "target": "cardiovascular system",
@@ -285,7 +285,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/YpiVfmsapfm9PB",
+      "gifUrl": "https://v2.exercisedb.io/image/Vp69qqOvvJ-2Bk",
       "id": "3672",
       "name": "back and forth step",
       "target": "cardiovascular system",
@@ -307,7 +307,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/F9EvclPOaBZh5n",
+      "gifUrl": "https://v2.exercisedb.io/image/dqlyIy-K3IkMw5",
       "id": "3360",
       "name": "bear crawl",
       "target": "cardiovascular system",
@@ -328,7 +328,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/4h1lteew6g1aCL",
+      "gifUrl": "https://v2.exercisedb.io/image/y6Eo7gmESqRLzk",
       "id": "1160",
       "name": "burpee",
       "target": "cardiovascular system",
@@ -352,7 +352,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/QW8PTs7paOHPgq",
+      "gifUrl": "https://v2.exercisedb.io/image/Y7f3JeRnYQP0-6",
       "id": "3221",
       "name": "half knee bends (male)",
       "target": "cardiovascular system",
@@ -372,7 +372,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/KjtDGVqvfBeIAG",
+      "gifUrl": "https://v2.exercisedb.io/image/3ZCCLIEvCQlMEl",
       "id": "3636",
       "name": "high knee against wall",
       "target": "cardiovascular system",
@@ -395,7 +395,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/jgkfHM2bRm3ORK",
+      "gifUrl": "https://v2.exercisedb.io/image/vZbLo1aTncGsI0",
       "id": "0501",
       "name": "jack burpee",
       "target": "cardiovascular system",
@@ -420,7 +420,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/cfJZm-XjzBswSo",
+      "gifUrl": "https://v2.exercisedb.io/image/RjSgPvxJV0aHvt",
       "id": "3224",
       "name": "jack jump (male)",
       "target": "cardiovascular system",
@@ -438,7 +438,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/V4E9f4zc5VVjh4",
+      "gifUrl": "https://v2.exercisedb.io/image/lkKCUUaSFzhlzk",
       "id": "0630",
       "name": "mountain climber",
       "target": "cardiovascular system",
@@ -458,7 +458,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/aIiP5x8qrRlEeF",
+      "gifUrl": "https://v2.exercisedb.io/image/fvuTVVYxGf073B",
       "id": "3638",
       "name": "push to run",
       "target": "cardiovascular system",
@@ -479,7 +479,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/5LnLb72rv9S278",
+      "gifUrl": "https://v2.exercisedb.io/image/y50Qzf4bUKacac",
       "id": "0685",
       "name": "run",
       "target": "cardiovascular system",
@@ -499,7 +499,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/VlRF9WDppwUUhU",
+      "gifUrl": "https://v2.exercisedb.io/image/ntxYLrQQtxLMa9",
       "id": "0684",
       "name": "run (equipment)",
       "target": "cardiovascular system",
@@ -519,7 +519,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/ixcPH2ElWSEwAq",
+      "gifUrl": "https://v2.exercisedb.io/image/AQN7poUBzqj2KV",
       "id": "3219",
       "name": "scissor jumps (male)",
       "target": "cardiovascular system",
@@ -539,7 +539,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/AqxS2UGjPPbNF2",
+      "gifUrl": "https://v2.exercisedb.io/image/FwoehAIzlcJbT4",
       "id": "3222",
       "name": "semi squat jump (male)",
       "target": "cardiovascular system",
@@ -559,7 +559,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/1uFzOVp0FOal-9",
+      "gifUrl": "https://v2.exercisedb.io/image/dckGHBnkTudj5W",
       "id": "3656",
       "name": "short stride run",
       "target": "cardiovascular system",
@@ -579,7 +579,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/EsXI4ojWRRAKKH",
+      "gifUrl": "https://v2.exercisedb.io/image/WEEH8CK3ys1sC3",
       "id": "3361",
       "name": "skater hops",
       "target": "cardiovascular system",
@@ -602,7 +602,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/C-5P4BFQpEaTO-",
+      "gifUrl": "https://v2.exercisedb.io/image/qzyN8GVbKi642T",
       "id": "3671",
       "name": "ski step",
       "target": "cardiovascular system",
@@ -624,7 +624,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/MKTKvx7wXUbU8U",
+      "gifUrl": "https://v2.exercisedb.io/image/483GU47ywvQCIB",
       "id": "3223",
       "name": "star jump (male)",
       "target": "cardiovascular system",
@@ -644,7 +644,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/pKnhffGKc2hwmT",
+      "gifUrl": "https://v2.exercisedb.io/image/3u-rvrmoPA4LPr",
       "id": "3318",
       "name": "swing 360",
       "target": "cardiovascular system",
@@ -663,7 +663,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/TAWWXwNB1Yq3u8",
+      "gifUrl": "https://v2.exercisedb.io/image/45uP2CY-Pqt7c5",
       "id": "3655",
       "name": "walking high knees lunge",
       "target": "cardiovascular system",
@@ -686,7 +686,7 @@ const backUpExercises =
   {
       "bodyPart": "cardio",
       "equipment": "body weight",
-      "gifUrl": "https://v2.exercisedb.io/image/6EVuTNfpWpThGA",
+      "gifUrl": "https://v2.exercisedb.io/image/H0cM3kC66Qp0d0",
       "id": "3637",
       "name": "wheel run",
       "target": "cardiovascular system",
